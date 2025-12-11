@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function match_parens at 0x7afe8ca15300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(['()(', ')']) == 'Yes'
+E       AssertionError: assert 'No' == 'Yes'
+E         
+E         - Yes
+E         + No
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'No' == 'Yes'
+1 failed in 0.04s

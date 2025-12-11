@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function skjkasdkd at 0x79fa13ee53a0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate([0,3,2,1,3,5,7,4,5,5,5,2,181,32,4,32,3,2,32,324,4,3]) == 10, "This prints if this assert fails 1 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert (181, 226) == 10
+E        +  where (181, 226) = <function skjkasdkd at 0x79fa13ee53a0>([0, 3, 2, 1, 3, 5, ...])
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

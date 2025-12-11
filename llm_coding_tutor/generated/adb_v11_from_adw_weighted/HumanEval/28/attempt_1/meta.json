@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:58:22",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1203,
+  "traceback_tail": "==================================== ERRORS ====================================\n______________________ ERROR collecting test_solution.py _______________________\ntest_solution.py:5: in <module>\n    from solution import concatenate as candidate\nsolution.py:1: in <module>\n    def concatenate(strings: List[str]) -> str:\n                             ^^^^\nE   NameError: name 'List' is not defined\n=========================== short test summary info ============================\nERROR test_solution.py - NameError: name 'List' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s"
+}

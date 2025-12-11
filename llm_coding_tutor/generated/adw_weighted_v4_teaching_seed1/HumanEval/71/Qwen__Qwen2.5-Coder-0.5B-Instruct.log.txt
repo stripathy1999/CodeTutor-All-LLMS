@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function triangle_area at 0x7f4424a813a0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(3, 4, 5) == 6.00, "This prints if this assert fails 1 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert 30.0 == 6.0
+E        +  where 30.0 = <function triangle_area at 0x7f4424a813a0>(3, 4, 5)
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

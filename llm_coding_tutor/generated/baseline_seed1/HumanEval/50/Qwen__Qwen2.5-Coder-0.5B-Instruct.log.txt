@@ -1,0 +1,28 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function decode_shift at 0x7a4d088d5440>
+
+    def check(candidate):
+        from random import randint, choice
+        import copy
+        import string
+    
+        letters = string.ascii_lowercase
+        for _ in range(100):
+            str = ''.join(choice(letters) for i in range(randint(10, 20)))
+>           encoded_str = encode_shift(str)
+                          ^^^^^^^^^^^^
+E           NameError: name 'encode_shift' is not defined
+
+test_solution.py:19: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'encode_shift' is not def...
+1 failed in 0.04s

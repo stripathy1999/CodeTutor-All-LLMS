@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:52:30",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1203,
+  "traceback_tail": "ion fix_spaces at 0x792c22984900>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate(\"Example\") == \"Example\", \"This prints if this assert fails 1 (good for debugging!)\"\n>       assert candidate(\"Mudasir Hanif \") == \"Mudasir_Hanif_\", \"This prints if this assert fails 2 (good for debugging!)\"\nE       AssertionError: This prints if this assert fails 2 (good for debugging!)\nE       assert 'Mudasir Hanif ' == 'Mudasir_Hanif_'\nE         \nE         - Mudasir_Hanif_\nE         ?        ^     ^\nE         + Mudasir Hanif \nE         ?        ^     ^\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: This prints if this asser...\n1 failed in 0.04s"
+}

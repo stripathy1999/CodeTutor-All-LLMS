@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function histogram at 0x7c92cb5991c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate('a b b a') == {'a':2,'b': 2}, "This prints if this assert fails 1 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert {' ': 3} == {'a': 2, 'b': 2}
+E         
+E         Left contains 1 more item:
+E         {' ': 3}
+E         Right contains 2 more items:
+E         {'a': 2, 'b': 2}
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

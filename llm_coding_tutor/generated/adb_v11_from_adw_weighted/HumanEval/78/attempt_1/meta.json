@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:15:03",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "======================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function hex_key at 0x7d72ef9e1300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate(\"AB\") == 1, \"First test error: \" + str(candidate(\"AB\"))\nE       AssertionError: First test error: None\nE       assert None == 1\nE        +  where None = <function hex_key at 0x7d72ef9e1300>('AB')\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: First test error: None\n1 failed in 0.04s"
+}

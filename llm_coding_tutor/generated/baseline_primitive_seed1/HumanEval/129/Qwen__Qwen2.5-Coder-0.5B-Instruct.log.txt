@@ -1,0 +1,15 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import minPath as candidate
+solution.py:14: in <module>
+    print(minPath([[1,2,3],[4,5,6],[7,8,9]], 3))  # Output: [1, 2, 1]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+solution.py:9: in minPath
+    res[i].append(min(res[i - 1][j], res[i][j - 1]))
+                      ^^^^^^^^^^^^^
+E   IndexError: list index out of range
+=========================== short test summary info ============================
+ERROR test_solution.py - IndexError: list index out of range
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

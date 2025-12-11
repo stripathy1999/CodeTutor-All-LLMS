@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:19:58",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "____ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function closest_integer at 0x7d7e4b42d300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate(\"10\") == 10, \"Test 1\"\n        assert candidate(\"14.5\") == 15, \"Test 2\"\n>       assert candidate(\"-15.5\") == -16, \"Test 3\"\nE       AssertionError: Test 3\nE       assert -15 == -16\nE        +  where -15 = <function closest_integer at 0x7d7e4b42d300>('-15.5')\n\ntest_solution.py:11: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: Test 3\n1 failed in 0.04s"
+}

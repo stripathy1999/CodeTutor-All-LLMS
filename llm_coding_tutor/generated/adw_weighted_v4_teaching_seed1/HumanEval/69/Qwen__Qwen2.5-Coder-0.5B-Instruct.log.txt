@@ -1,0 +1,23 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function search at 0x7e02d6c15300>
+
+    def check(candidate):
+    
+        # manually generated tests
+>       assert candidate([5, 5, 5, 5, 1]) == 1
+E       assert None == 1
+E        +  where None = <function search at 0x7e02d6c15300>([5, 5, 5, 5, 1])
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert None == 1
+1 failed in 0.05s

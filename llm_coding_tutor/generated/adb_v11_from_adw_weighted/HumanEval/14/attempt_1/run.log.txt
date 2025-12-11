@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function all_prefixes at 0x7c3eae0c5300>
+
+    def check(candidate):
+        assert candidate('') == []
+>       assert candidate('asdfgh') == ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']
+E       AssertionError: assert ['', 'a', 'as...sdf', 'asdfg'] == ['a', 'as', '...fg', 'asdfgh']
+E         
+E         At index 0 diff: '' != 'a'
+E         Use -v to get more diff
+
+test_solution.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert ['', 'a', 'as...sd...
+1 failed in 0.04s

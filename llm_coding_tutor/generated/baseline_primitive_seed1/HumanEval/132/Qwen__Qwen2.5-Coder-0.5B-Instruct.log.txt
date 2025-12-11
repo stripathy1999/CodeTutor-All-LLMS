@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function is_nested at 0x7c25f3069300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate('[]]]]]]][[[[[]') == False
+>       assert candidate('[][]') == False
+E       AssertionError: assert True == False
+E        +  where True = <function is_nested at 0x7c25f3069300>('[][]')
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert True == False
+1 failed in 0.04s

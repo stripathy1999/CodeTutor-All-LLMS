@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:59:35",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "_________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function all_prefixes at 0x7c3eae0c5300>\n\n    def check(candidate):\n        assert candidate('') == []\n>       assert candidate('asdfgh') == ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']\nE       AssertionError: assert ['', 'a', 'as...sdf', 'asdfg'] == ['a', 'as', '...fg', 'asdfgh']\nE         \nE         At index 0 diff: '' != 'a'\nE         Use -v to get more diff\n\ntest_solution.py:16: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert ['', 'a', 'as...sd...\n1 failed in 0.04s"
+}

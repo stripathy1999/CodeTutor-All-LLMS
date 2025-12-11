@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function remove_vowels at 0x79e88143d1c0>
+
+    def check(candidate):
+        assert candidate('') == ''
+        assert candidate("abcdef\nghijklm") == 'bcdf\nghjklm'
+        assert candidate('fedcba') == 'fdcb'
+        assert candidate('eeeee') == ''
+>       assert candidate('acBAA') == 'cB'
+E       AssertionError: assert 'cb' == 'cB'
+E         
+E         - cB
+E         + cb
+
+test_solution.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'cb' == 'cB'
+1 failed in 0.04s

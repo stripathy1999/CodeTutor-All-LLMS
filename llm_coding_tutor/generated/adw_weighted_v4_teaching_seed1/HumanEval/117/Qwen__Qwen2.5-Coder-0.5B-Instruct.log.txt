@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function select_words at 0x7ae3001f11c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate("Mary had a little lamb", 4) == ["little"], "First test error: " + str(candidate("Mary had a little lamb", 4))
+E       AssertionError: First test error: ['Mary', 'lamb']
+E       assert ['Mary', 'lamb'] == ['little']
+E         
+E         At index 0 diff: 'Mary' != 'little'
+E         Left contains one more item: 'lamb'
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: First test error: ['Mary'...
+1 failed in 0.04s

@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function same_chars at 0x7ddbddd88a40>
+
+    def check(candidate):
+>       assert candidate('eabcdzzzz', 'dddzzzzzzzddeddabc') == True
+E       AssertionError: assert False == True
+E        +  where False = <function same_chars at 0x7ddbddd88a40>('eabcdzzzz', 'dddzzzzzzzddeddabc')
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert False == True
+1 failed in 0.04s

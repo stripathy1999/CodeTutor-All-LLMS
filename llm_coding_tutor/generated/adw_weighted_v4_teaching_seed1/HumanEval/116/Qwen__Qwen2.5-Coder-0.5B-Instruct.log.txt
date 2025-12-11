@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function sort_array at 0x7e9326f5d300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert True, "This prints if this assert fails 1 (good for debugging!)"
+>       assert candidate([1,5,2,3,4]) == [1, 2, 4, 3, 5]
+E       assert None == [1, 2, 4, 3, 5]
+E        +  where None = <function sort_array at 0x7e9326f5d300>([1, 5, 2, 3, 4])
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert None == [1, 2, 4, 3, 5]
+1 failed in 0.04s

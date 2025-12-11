@@ -1,0 +1,17 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import closest_integer as candidate
+solution.py:29: in <module>
+    print(closest_integer("15.3"))     # Should print 15
+          ^^^^^^^^^^^^^^^^^^^^^^^
+solution.py:20: in closest_integer
+    num = int(value)
+          ^^^^^^^^^^
+E   ValueError: invalid literal for int() with base 10: '15.3'
+------------------------------- Captured stdout --------------------------------
+10
+=========================== short test summary info ============================
+ERROR test_solution.py - ValueError: invalid literal for int() with base 10: ...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

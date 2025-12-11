@@ -1,0 +1,28 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function solve at 0x7e4b6d1a9300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate("AsDf") == "aSdF"
+        assert candidate("1234") == "4321"
+        assert candidate("ab") == "AB"
+>       assert candidate("#a@C") == "#A@c"
+E       AssertionError: assert 'C@a#' == '#A@c'
+E         
+E         - #A@c
+E         + C@a#
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'C@a#' == '#A@c'
+1 failed in 0.04s

@@ -1,0 +1,31 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function cycpattern_check at 0x782f19cc5300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        #assert True, "This prints if this assert fails 1 (good for debugging!)"
+    
+        # Check some edge cases that are easy to work out by hand.
+        #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+        assert  candidate("xyzw","xyw") == False , "test #0"
+        assert  candidate("yello","ell") == True , "test #1"
+        assert  candidate("whattup","ptut") == False , "test #2"
+>       assert  candidate("efef","fee") == True , "test #3"
+E       AssertionError: test #3
+E       assert False == True
+E        +  where False = <function cycpattern_check at 0x782f19cc5300>('efef', 'fee')
+
+test_solution.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: test #3
+1 failed in 0.04s

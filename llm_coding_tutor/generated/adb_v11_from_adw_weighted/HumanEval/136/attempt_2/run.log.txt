@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function largest_smallest_integers at 0x78ed116c4a40>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate([2, 4, 1, 3, 5, 7]) == (None, 1)
+E       assert (-inf, 1) == (None, 1)
+E         
+E         At index 0 diff: -inf != None
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert (-inf, 1) == (None, 1)
+1 failed in 0.04s

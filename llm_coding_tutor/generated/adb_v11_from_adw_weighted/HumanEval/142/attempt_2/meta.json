@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:00:35",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                                    [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function sum_squares at 0x7b8217291440>\n\n    def check(candidate):\n    \n        # Check some simple cases\n    \n>       assert candidate([1,2,3]) == 6\nE       assert 1 == 6\nE        +  where 1 = <function sum_squares at 0x7b8217291440>([1, 2, 3])\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert 1 == 6\n1 failed in 0.04s"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:03:17",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "================ FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function even_odd_count at 0x7c41e095d1c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate(7) == (0, 1)\n>       assert candidate(-78) == (1, 1)\nE       assert (0, 0) == (1, 1)\nE         \nE         At index 0 diff: 0 != 1\nE         Use -v to get more diff\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert (0, 0) == (1, 1)\n1 failed in 0.04s"
+}

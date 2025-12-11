@@ -1,0 +1,40 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:10: in check
+    assert candidate([]) == [], "Error"
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+array = []
+
+    def sort_array(array):
+        """
+        Given an array of non-negative integers, return a copy of the given array after sorting,
+        you will sort the given array in ascending order if the sum( first index value, last index value) is odd,
+        or sort it in descending order if the sum( first index value, last index value) is even.
+    
+        Note:
+        * don't change the given array.
+    
+        Examples:
+        * sort_array([]) => []
+        * sort_array([5]) => [5]
+        * sort_array([2, 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]
+        * sort_array([2, 4, 3, 0, 1, 5, 6]) => [6, 5, 4, 3, 2, 1, 0]
+        """
+        sorted_array = sorted(array)
+>       if sum(sorted_array[0], sorted_array[-1]) % 2 == 0:
+               ^^^^^^^^^^^^^^^
+E       IndexError: list index out of range
+
+solution.py:20: IndexError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - IndexError: list index out of range
+1 failed in 0.04s

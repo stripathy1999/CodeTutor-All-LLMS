@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:07:18",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": " largest non zero coefficient as it guarantees\n        a solution.\n        >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n        -0.5\n        >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n        1.0\n        \"\"\"\n        if len(xs) % 2!= 0:\n            raise ValueError(\"The list of coefficients must have an even number of elements.\")\n    \n        # Find the root using Newton's method\n>       def newton_method(coefficients: List[float], x: float) -> float:\n                                        ^^^^\nE       NameError: name 'List' is not defined\n\nsolution.py:17: NameError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - NameError: name 'List' is not defined\n1 failed in 0.04s"
+}

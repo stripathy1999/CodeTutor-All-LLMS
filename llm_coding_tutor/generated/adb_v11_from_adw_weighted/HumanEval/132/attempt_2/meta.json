@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:57:45",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "___________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function is_nested at 0x79e13b2d1300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate('[[]]') == True, \"This prints if this assert fails 1 (good for debugging!)\"\n        assert candidate('[]]]]]]][[[[[]') == False\n>       assert candidate('[][]') == False\nE       AssertionError: assert True == False\nE        +  where True = <function is_nested at 0x79e13b2d1300>('[][]')\n\ntest_solution.py:11: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert True == False\n1 failed in 0.04s"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:18:31",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "____________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function encode at 0x7d67c8e491c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate('TEST') == 'tgst', \"This prints if this assert fails 1 (good for debugging!)\"\nE       AssertionError: This prints if this assert fails 1 (good for debugging!)\nE       assert 'tIst' == 'tgst'\nE         \nE         - tgst\nE         ?  ^\nE         + tIst\nE         ?  ^\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: This prints if this asser...\n1 failed in 0.04s"
+}

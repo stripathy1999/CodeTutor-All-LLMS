@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function can_arrange at 0x7b59ef329300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate([1,2,4,3,5])==3
+        assert candidate([1,2,4,5])==-1
+        assert candidate([1,4,2,5,6,7,8,9,10])==2
+>       assert candidate([4,8,5,7,3])==4
+E       assert 2 == 4
+E        +  where 2 = <function can_arrange at 0x7b59ef329300>([4, 8, 5, 7, 3])
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 2 == 4
+1 failed in 0.04s

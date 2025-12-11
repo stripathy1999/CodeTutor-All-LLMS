@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function check_dict_case at 0x7a902f135300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+>       assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+E       AssertionError: Second test error: True
+E       assert True == False
+E        +  where True = <function check_dict_case at 0x7a902f135300>({'A': 'banana', 'B': 'banana', 'p': 'pineapple'})
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Second test error: True
+1 failed in 0.04s

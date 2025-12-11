@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:44:25",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": ":22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function by_length at 0x7b4a48d14a40>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n>       assert candidate([2, 1, 1, 4, 5, 8, 2, 3]) == [\"Eight\", \"Five\", \"Four\", \"Three\", \"Two\", \"Two\", \"One\", \"One\"], \"Error\"\nE       AssertionError: Error\nE       assert None == ['Eight', 'Five', 'Four', 'Three', 'Two', 'Two', ...]\nE        +  where None = <function by_length at 0x7b4a48d14a40>([2, 1, 1, 4, 5, 8, ...])\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: Error\n1 failed in 0.04s"
+}

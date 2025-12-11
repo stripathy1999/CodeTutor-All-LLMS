@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function find_closest_elements at 0x7d0e5d1ed300>
+
+    def check(candidate):
+>       assert candidate([1.0, 2.0, 3.9, 4.0, 5.0, 2.2]) == (3.9, 4.0)
+E       assert <built-in function sorted> == (3.9, 4.0)
+E        +  where <built-in function sorted> = <function find_closest_elements at 0x7d0e5d1ed300>([1.0, 2.0, 3.9, 4.0, 5.0, 2.2])
+
+test_solution.py:15: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert <built-in function sorted> == (3.9...
+1 failed in 0.04s

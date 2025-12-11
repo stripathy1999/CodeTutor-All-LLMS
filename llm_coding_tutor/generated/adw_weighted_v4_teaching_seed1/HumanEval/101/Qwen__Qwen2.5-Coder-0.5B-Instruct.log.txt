@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function words_string at 0x78f66aba11c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert True, "This prints if this assert fails 1 (good for debugging!)"
+>       assert candidate("Hi, my name is John") == ["Hi", "my", "name", "is", "John"]
+E       AssertionError: assert ['Hi', ' my name is John'] == ['Hi', 'my', ... 'is', 'John']
+E         
+E         At index 1 diff: ' my name is John' != 'my'
+E         Right contains 3 more items, first extra item: 'name'
+E         Use -v to get more diff
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert ['Hi', ' my name i...
+1 failed in 0.04s

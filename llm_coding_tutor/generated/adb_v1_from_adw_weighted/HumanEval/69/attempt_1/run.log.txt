@@ -1,0 +1,44 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate([5, 5, 5, 5, 1]) == 1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+lst = [5, 5, 5, 5, 1]
+
+    def search(lst):
+        '''
+        You are given a non-empty list of positive integers. Return the greatest integer that is greater than
+        zero, and has a frequency greater than or equal to the value of the integer itself.
+        The frequency of an integer is the number of times it appears in the list.
+        If no such a value exist, return -1.
+        Examples:
+            search([4, 1, 2, 2, 3, 1]) == 2
+            search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3
+            search([5, 5, 4, 4, 4]) == -1
+        '''
+        # Initialize variables to track the maximum value and its frequency
+        max_value = -1
+        max_frequency = 0
+    
+        # Iterate through each number in the list
+        for num in lst:
+            # Check if the number is greater than zero
+            if num > 0:
+                # Increment the frequency of the number
+>               num_frequency += 1
+                ^^^^^^^^^^^^^
+E               UnboundLocalError: cannot access local variable 'num_frequency' where it is not associated with a value
+
+solution.py:21: UnboundLocalError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - UnboundLocalError: cannot access local va...
+1 failed in 0.05s

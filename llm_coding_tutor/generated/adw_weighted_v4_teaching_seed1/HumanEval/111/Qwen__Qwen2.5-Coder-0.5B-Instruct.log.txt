@@ -1,0 +1,20 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import histogram as candidate
+solution.py:21: in <module>
+    print(histogram(''))  # {}
+          ^^^^^^^^^^^^^
+solution.py:9: in histogram
+    max_count = max(char_counts.values())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: max() iterable argument is empty
+------------------------------- Captured stdout --------------------------------
+{' ': 2}
+{' ': 3}
+{' ': 4}
+{'b': 4, ' ': 4}
+=========================== short test summary info ============================
+ERROR test_solution.py - ValueError: max() iterable argument is empty
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

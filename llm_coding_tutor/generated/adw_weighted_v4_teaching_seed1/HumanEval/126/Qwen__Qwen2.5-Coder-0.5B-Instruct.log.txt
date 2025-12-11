@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate([5]) == True
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+lst = [5]
+
+    def is_sorted(lst):
+        # Check if the list has more than one duplicate of the same number
+>       duplicates = Counter(lst)
+                     ^^^^^^^
+E       NameError: name 'Counter' is not defined
+
+solution.py:3: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'Counter' is not defined
+1 failed in 0.04s

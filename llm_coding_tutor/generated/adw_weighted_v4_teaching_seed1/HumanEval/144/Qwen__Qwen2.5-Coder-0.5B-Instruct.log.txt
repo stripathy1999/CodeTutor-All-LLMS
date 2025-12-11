@@ -1,0 +1,31 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate("1/5", "5/1") == True, 'test1'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+x = '1/5', n = '5/1'
+
+    def simplify(x, n):
+        # Convert the inputs to Fraction objects
+        num1, den1 = map(Fraction, x.split('/'))
+        num2, den2 = map(Fraction, n.split('/'))
+    
+        # Simplify by dividing by the least common multiple (LCM)
+        common_den = den1 * den2
+>       lcm = common_den * (num1.denom * num2.denom)
+                            ^^^^^^^^^^
+E       AttributeError: 'Fraction' object has no attribute 'denom'
+
+solution.py:10: AttributeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AttributeError: 'Fraction' object has no ...
+1 failed in 0.04s

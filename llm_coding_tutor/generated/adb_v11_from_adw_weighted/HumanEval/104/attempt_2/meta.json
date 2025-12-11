@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:44:01",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "=============================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function unique_digits at 0x7d4a16f60900>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate([15, 33, 1422, 1]) == [1, 15, 33]\n>       assert candidate([152, 323, 1422, 10]) == []\nE       assert [323] == []\nE         \nE         Left contains one more item: 323\nE         Use -v to get more diff\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert [323] == []\n1 failed in 0.04s"
+}

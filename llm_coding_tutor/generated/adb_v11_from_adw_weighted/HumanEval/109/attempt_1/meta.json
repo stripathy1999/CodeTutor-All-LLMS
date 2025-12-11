@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:51:30",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1303,
+  "traceback_tail": ">:1387: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1360: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1331: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:935: in _load_unlocked\n    ???\n/usr/local/lib/python3.12/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\ntest_solution.py:5: in <module>\n    from solution import move_one_ball as candidate\nE     File \"/tmp/heval_move_one_ball_hzxb93u_/solution.py\", line 33\nE       #\nE        ^\nE   IndentationError: expected an indented block after 'for' statement on line 32\n=========================== short test summary info ============================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.16s"
+}

@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function closest_integer at 0x7f896b5111c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate("10") == 10, "Test 1"
+E       AssertionError: Test 1
+E       assert None == 10
+E        +  where None = <function closest_integer at 0x7f896b5111c0>('10')
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 1
+1 failed in 0.04s

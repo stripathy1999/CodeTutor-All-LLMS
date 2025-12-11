@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function is_happy at 0x7a1c0e059300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate("a") == False , "a"
+        assert candidate("aa") == False , "aa"
+        assert candidate("abcd") == True , "abcd"
+>       assert candidate("aabb") == False , "aabb"
+E       AssertionError: aabb
+E       assert True == False
+E        +  where True = <function is_happy at 0x7a1c0e059300>('aabb')
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: aabb
+1 failed in 0.04s

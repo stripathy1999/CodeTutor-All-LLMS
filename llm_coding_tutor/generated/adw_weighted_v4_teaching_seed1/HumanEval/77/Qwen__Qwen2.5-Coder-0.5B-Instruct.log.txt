@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function iscube at 0x7b42e98c11c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate(1) == True, "First test error: " + str(candidate(1))
+        assert candidate(2) == False, "Second test error: " + str(candidate(2))
+>       assert candidate(-1) == True, "Third test error: " + str(candidate(-1))
+E       AssertionError: Third test error: False
+E       assert False == True
+E        +  where False = <function iscube at 0x7b42e98c11c0>(-1)
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Third test error: False
+1 failed in 0.04s

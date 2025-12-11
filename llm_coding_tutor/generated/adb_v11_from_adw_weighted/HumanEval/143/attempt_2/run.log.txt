@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function words_in_sentence at 0x78ec64b411c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate("This is a test") == "is"
+E       AssertionError: assert 'Thisatest' == 'is'
+E         
+E         - is
+E         + Thisatest
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'Thisatest' == 'is'
+1 failed in 0.04s

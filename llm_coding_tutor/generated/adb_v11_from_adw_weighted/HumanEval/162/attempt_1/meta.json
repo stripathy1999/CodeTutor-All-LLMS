@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:05:10",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": ".                                                                        [100%]\n1 passed in 0.01s"
+}

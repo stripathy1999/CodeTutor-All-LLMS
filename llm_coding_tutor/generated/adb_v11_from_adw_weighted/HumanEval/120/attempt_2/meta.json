@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:54:18",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "========================= FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function maximum at 0x7906ed5b11c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate([-3, -4, 5], 3) == [-4, -3, 5]\nE       assert [5, -3, -4] == [-4, -3, 5]\nE         \nE         At index 0 diff: 5 != -4\nE         Use -v to get more diff\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert [5, -3, -4] == [-4, -3, 5]\n1 failed in 0.04s"
+}

@@ -1,0 +1,3 @@
+variant,tasks,passed,pass_rate_%
+adw→adb_v11 (combined),164,93,56.7
+adw→adb_ecnn_v11 (combined),164,49,29.9

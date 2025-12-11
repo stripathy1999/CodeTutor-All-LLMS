@@ -1,0 +1,22 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function fizz_buzz at 0x7dda1edb11c0>
+
+    def check(candidate):
+        assert candidate(50) == 0
+>       assert candidate(78) == 2
+E       assert 0 == 2
+E        +  where 0 = <function fizz_buzz at 0x7dda1edb11c0>(78)
+
+test_solution.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 0 == 2
+1 failed in 0.04s

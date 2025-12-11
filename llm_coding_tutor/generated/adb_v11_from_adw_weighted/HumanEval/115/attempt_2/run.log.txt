@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function max_fill at 0x7817ca0a9300>
+
+    def check(candidate):
+    
+    
+        # Check some simple cases
+        assert True, "This prints if this assert fails 1 (good for debugging!)"
+>       assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+E       AssertionError: Error
+E       assert None == 6
+E        +  where None = <function max_fill at 0x7817ca0a9300>([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1)
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Error
+1 failed in 0.04s

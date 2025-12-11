@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function sort_third at 0x7f21aa48ca40>
+
+    def check(candidate):
+>       assert tuple(candidate([1, 2, 3])) == tuple(sort_third([1, 2, 3]))
+                                                    ^^^^^^^^^^
+E       NameError: name 'sort_third' is not defined
+
+test_solution.py:12: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'sort_third' is not defined
+1 failed in 0.04s

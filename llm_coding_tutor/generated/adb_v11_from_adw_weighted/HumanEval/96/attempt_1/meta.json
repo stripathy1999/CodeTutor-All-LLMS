@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:19:37",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                                        [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function count_up_to at 0x7ef0a4fd13a0>\n\n    def check(candidate):\n    \n>       assert candidate(5) == [2,3]\nE       assert [2, 3, 5] == [2, 3]\nE         \nE         Left contains one more item: 5\nE         Use -v to get more diff\n\ntest_solution.py:8: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert [2, 3, 5] == [2, 3]\n1 failed in 0.04s"
+}

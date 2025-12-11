@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function find_max at 0x7930839ed1c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert (candidate(["name", "of", "string"]) == "string"), "t1"
+>       assert (candidate(["name", "enam", "game"]) == "enam"), 't2'
+E       AssertionError: t2
+E       assert 'name' == 'enam'
+E         
+E         - enam
+E         ? -
+E         + name
+E         ?    +
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: t2
+1 failed in 0.04s

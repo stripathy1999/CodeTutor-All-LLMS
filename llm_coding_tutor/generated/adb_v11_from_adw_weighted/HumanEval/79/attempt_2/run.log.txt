@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function decimal_to_binary at 0x7a414bcb5300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(0) == "db0db"
+E       AssertionError: assert '0' == 'db0db'
+E         
+E         - db0db
+E         + 0
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '0' == 'db0db'
+1 failed in 0.04s

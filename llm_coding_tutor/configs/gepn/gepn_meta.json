@@ -1,0 +1,39 @@
+{
+  "seed": 2025,
+  "n_samples": 2047,
+  "n_text_features": 5000,
+  "n_numeric_features": 22,
+  "has_both_classes": true,
+  "label_counts": {
+    "1": 1558,
+    "0": 489
+  },
+  "val_accuracy": 0.7926829268292683,
+  "val_roc_auc": 0.8956698063840921,
+  "val_brier": 0.1437660297614408,
+  "numeric_features": [
+    "code_chars",
+    "code_lines",
+    "code_indent_lines",
+    "has_def",
+    "has_entry_def",
+    "has_return",
+    "has_print",
+    "has_if",
+    "has_for",
+    "has_while",
+    "has_try",
+    "has_docstring",
+    "has_list_comp",
+    "ast_ok",
+    "prompt_chars",
+    "prompt_tokens_est",
+    "entry_name_len",
+    "temperature",
+    "max_new_tokens",
+    "rubric_bullets",
+    "gen_latency_ms",
+    "seed"
+  ],
+  "timestamp": "2025-12-01 15:17:35"
+}

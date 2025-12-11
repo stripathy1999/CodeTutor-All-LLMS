@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:14:23",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "ng!)\"\n        assert candidate(4, 2)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n        assert candidate(9, 3)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n        assert candidate(16, 4)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n>       assert candidate(24, 2)==False, \"This prints if this assert fails 1 (good for debugging!)\"\nE       AssertionError: This prints if this assert fails 1 (good for debugging!)\nE       assert True == False\nE        +  where True = <function is_simple_power at 0x7b16d7a85300>(24, 2)\n\ntest_solution.py:14: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: This prints if this asser...\n1 failed in 0.04s"
+}

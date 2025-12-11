@@ -1,0 +1,49 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:10: in check
+    assert candidate([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 3) == [1, 2, 1]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], k = 3
+
+    def minPath(grid, k):
+        # Initialize the grid with values 0 and count the occurrences of each value
+        val_count = {}
+        for row in grid:
+            for col in row:
+                if col > 0:
+                    val_count[col] = val_count.get(col, 0) + 1
+    
+        # Find the smallest value in the grid
+        min_val = min(val_count.keys())
+    
+        # Create a priority queue based on the number of occurrences of each value
+        pq = []
+        for val in val_count:
+            if val == min_val:
+                heapq.heappush(pq, (val, val_count[val]))
+    
+        # Perform the k-th smallest path from the grid
+        result = []
+        while pq:
+            val, count = heapq.heappop(pq)
+            if count == k:
+                result.append(val)
+            else:
+                for neighbor in [val - 1, val + 1]:
+>                   if neighbor > 0 and neighbor < N:
+                                                   ^
+E                   NameError: name 'N' is not defined
+
+solution.py:28: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'N' is not defined
+1 failed in 0.04s

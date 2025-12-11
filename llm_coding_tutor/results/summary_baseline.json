@@ -1,0 +1,15 @@
+{
+  "variant": "baseline",
+  "tasks": 328,
+  "passed": 132,
+  "pass_rate_%": 40.24,
+  "95CI_%": 5.31,
+  "mean_latency_ms": 1212.78,
+  "std_latency_ms": 849.12,
+  "mean_tokens_in": 51.6,
+  "mean_tokens_out": 80.3,
+  "seeds": [
+    1,
+    2
+  ]
+}

@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function move_one_ball at 0x797a599791c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate([3, 4, 5, 1, 2])==True, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate([3, 5, 10, 1, 2])==True
+>       assert candidate([4, 3, 1, 2])==False
+E       assert True == False
+E        +  where True = <function move_one_ball at 0x797a599791c0>([4, 3, 1, 2])
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert True == False
+1 failed in 0.04s

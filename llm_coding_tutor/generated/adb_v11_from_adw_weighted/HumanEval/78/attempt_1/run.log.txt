@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function hex_key at 0x7d72ef9e1300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate("AB") == 1, "First test error: " + str(candidate("AB"))
+E       AssertionError: First test error: None
+E       assert None == 1
+E        +  where None = <function hex_key at 0x7d72ef9e1300>('AB')
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: First test error: None
+1 failed in 0.04s

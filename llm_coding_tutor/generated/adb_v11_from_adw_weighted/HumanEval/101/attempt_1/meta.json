@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:50:05",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": " _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function words_string at 0x7faeed7651c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n>       assert candidate(\"Hi, my name is John\") == [\"Hi\", \"my\", \"name\", \"is\", \"John\"]\nE       AssertionError: assert ['Hi', ' my name is John'] == ['Hi', 'my', ... 'is', 'John']\nE         \nE         At index 1 diff: ' my name is John' != 'my'\nE         Right contains 3 more items, first extra item: 'name'\nE         Use -v to get more diff\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert ['Hi', ' my name i...\n1 failed in 0.04s"
+}

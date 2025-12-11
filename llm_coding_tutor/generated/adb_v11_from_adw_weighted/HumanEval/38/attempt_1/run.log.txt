@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function decode_cyclic at 0x7f501dd61300>
+
+    def check(candidate):
+        from random import randint, choice
+        import string
+    
+        letters = string.ascii_lowercase
+        for _ in range(100):
+            str = ''.join(choice(letters) for i in range(randint(10, 20)))
+>           encoded_str = encode_cyclic(str)
+                          ^^^^^^^^^^^^^
+E           NameError: name 'encode_cyclic' is not defined
+
+test_solution.py:18: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'encode_cyclic' is not de...
+1 failed in 0.04s

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:56:03",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "\n        assert candidate([1]) == True, \"This prints if this assert fails 3 (good for debugging!)\"\n        assert candidate([3, 2, 1]) == False, \"This prints if this assert fails 4 (good for debugging!)\"\n    \n        # Check some edge cases that are easy to work out by hand.\n>       assert candidate([1, 2, 2, 2, 3, 4]) == False, \"This prints if this assert fails 5 (good for debugging!)\"\nE       AssertionError: This prints if this assert fails 5 (good for debugging!)\nE       assert True == False\nE        +  where True = <function is_sorted at 0x7d1ac3bcd300>([1, 2, 2, 2, 3, 4])\n\ntest_solution.py:20: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: This prints if this asser...\n1 failed in 0.05s"
+}

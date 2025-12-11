@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function double_the_difference at 0x7d2961a71300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate([]) == 0 , "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate([5, 4]) == 25 , "This prints if this assert fails 2 (good for debugging!)"
+>       assert candidate([0.1, 0.2, 0.3]) == 0 , "This prints if this assert fails 3 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 3 (good for debugging!)
+E       assert 0.14 == 0
+E        +  where 0.14 = <function double_the_difference at 0x7d2961a71300>([0.1, 0.2, 0.3])
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

@@ -1,0 +1,215 @@
+meta:
+  version: v4-hierarchical
+  author: Sakshi Tripathy
+  created: '2025-12-01 08:41:35'
+  description: Hierarchical and cross-dimensional rubric for ADW with sub-criteria,
+    impact metadata, and adaptive scaling profiles. Designed for journal-grade reproducibility.
+dimensions:
+  correctness:
+    weight: 1.0
+    subcriteria:
+      signature_adherence:
+        desc: Preserve exact function name, parameters, and return type.
+        priority: high
+        impact: 5
+        pedagogical_value: 3
+      output_validity:
+        desc: Ensure returned values strictly match the expected format and type.
+        priority: high
+        impact: 5
+        pedagogical_value: 4
+      logic_fidelity:
+        desc: Implement intended logic precisely as per specification and docstring.
+        priority: high
+        impact: 5
+        pedagogical_value: 5
+      mutation_safety:
+        desc: Do not mutate input objects unless explicitly stated.
+        priority: medium
+        impact: 3
+        pedagogical_value: 3
+      return_consistency:
+        desc: Return deterministic output for identical inputs; no print statements.
+        priority: medium
+        impact: 3
+        pedagogical_value: 4
+  edge_cases:
+    weight: 0.9
+    subcriteria:
+      empty_inputs:
+        desc: Handle empty lists, strings, or None safely.
+        priority: high
+        impact: 4
+        pedagogical_value: 5
+      boundary_values:
+        desc: Test and handle min/max or threshold boundaries.
+        priority: high
+        impact: 4
+        pedagogical_value: 4
+      invalid_inputs:
+        desc: Gracefully handle invalid or unexpected data types.
+        priority: medium
+        impact: 3
+        pedagogical_value: 3
+      extreme_scale:
+        desc: Ensure algorithmic stability under large input sizes.
+        priority: low
+        impact: 3
+        pedagogical_value: 2
+  efficiency:
+    weight: 0.7
+    subcriteria:
+      time_complexity:
+        desc: Strive for O(n) or O(n log n) if feasible.
+        priority: high
+        impact: 4
+        pedagogical_value: 3
+      space_complexity:
+        desc: Minimize auxiliary space unless justified.
+        priority: medium
+        impact: 3
+        pedagogical_value: 2
+      redundant_ops:
+        desc: Avoid unnecessary recomputation and repeated loops.
+        priority: medium
+        impact: 3
+        pedagogical_value: 3
+      vectorization:
+        desc: Use native library functions if they simplify logic.
+        priority: low
+        impact: 2
+        pedagogical_value: 2
+  readability:
+    weight: 0.7
+    subcriteria:
+      naming_consistency:
+        desc: Use meaningful, PEP8-compliant variable names.
+        priority: high
+        impact: 3
+        pedagogical_value: 4
+      structure_clarity:
+        desc: Use consistent indentation, line length, and whitespace.
+        priority: medium
+        impact: 3
+        pedagogical_value: 3
+      logical_flow:
+        desc: Keep code blocks small and self-contained.
+        priority: medium
+        impact: 2
+        pedagogical_value: 3
+      no_obfuscation:
+        desc: Avoid overly compact or clever one-liners.
+        priority: low
+        impact: 2
+        pedagogical_value: 3
+  security:
+    weight: 0.5
+    subcriteria:
+      no_eval_exec:
+        desc: Never use eval(), exec(), or system commands.
+        priority: high
+        impact: 5
+        pedagogical_value: 2
+      no_untrusted_io:
+        desc: Avoid reading/writing external files or networks.
+        priority: high
+        impact: 4
+        pedagogical_value: 2
+      data_sanitization:
+        desc: Validate and sanitize user inputs.
+        priority: medium
+        impact: 3
+        pedagogical_value: 3
+  robustness:
+    weight: 0.6
+    subcriteria:
+      exception_guard:
+        desc: Add try/except for predictable runtime errors.
+        priority: high
+        impact: 4
+        pedagogical_value: 4
+      stability_under_stress:
+        desc: Ensure output remains valid under load or random data.
+        priority: medium
+        impact: 3
+        pedagogical_value: 3
+  comments:
+    weight: 0.3
+    subcriteria:
+      conciseness:
+        desc: Use a single comment to clarify the core idea.
+        priority: medium
+        impact: 2
+        pedagogical_value: 4
+      relevance:
+        desc: Ensure comment content adds real clarity.
+        priority: low
+        impact: 1
+        pedagogical_value: 3
+  type_hints:
+    weight: 0.4
+    subcriteria:
+      annotation_consistency:
+        desc: Use consistent typing annotations where clear.
+        priority: low
+        impact: 2
+        pedagogical_value: 2
+  docstring:
+    weight: 0.3
+    subcriteria:
+      preservation:
+        desc: Preserve existing docstrings as-is.
+        priority: high
+        impact: 3
+        pedagogical_value: 3
+      clarity:
+        desc: Ensure purpose and parameters are clear.
+        priority: medium
+        impact: 2
+        pedagogical_value: 4
+modes:
+  teaching:
+    focus_weights:
+    - correctness
+    - edge_cases
+    - readability
+    - comments
+    cap_high: 6
+    cap_med: 4
+    cap_low: 3
+  production:
+    focus_weights:
+    - correctness
+    - efficiency
+    - security
+    - robustness
+    cap_high: 5
+    cap_med: 3
+    cap_low: 2
+  research:
+    focus_weights:
+    - correctness
+    - robustness
+    - efficiency
+    - readability
+    cap_high: 7
+    cap_med: 5
+    cap_low: 3
+  diagnostic:
+    focus_weights:
+    - correctness
+    - edge_cases
+    - robustness
+    cap_high: 6
+    cap_med: 4
+    cap_low: 2
+  interactive_learning:
+    focus_weights:
+    - correctness
+    - readability
+    - comments
+    - docstring
+    - type_hints
+    cap_high: 8
+    cap_med: 5
+    cap_low: 3

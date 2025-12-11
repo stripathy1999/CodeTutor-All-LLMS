@@ -1,0 +1,36 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate(4) == 288, "Test 4"
+           ^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+n = 4
+
+    def special_factorial(n):
+        """The Brazilian factorial is defined as:
+        brazilian_factorial(n) = n! * (n-1)! * (n-2)! *... * 1!
+        where n > 0
+    
+        For example:
+        >>> special_factorial(4)
+        288
+    
+        The function will receive an integer as input and should return the special
+        factorial of this integer.
+        """
+>       return factorial(n) * factorial(n - 1) * factorial(n - 2) *... * factorial(1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: unsupported operand type(s) for *: 'int' and 'ellipsis'
+
+solution.py:15: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: unsupported operand type(s) fo...
+1 failed in 0.04s

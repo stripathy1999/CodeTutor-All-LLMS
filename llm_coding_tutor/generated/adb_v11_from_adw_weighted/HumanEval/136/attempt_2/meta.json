@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:51:35",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "======== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function largest_smallest_integers at 0x78ed116c4a40>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate([2, 4, 1, 3, 5, 7]) == (None, 1)\nE       assert (-inf, 1) == (None, 1)\nE         \nE         At index 0 diff: -inf != None\nE         Use -v to get more diff\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert (-inf, 1) == (None, 1)\n1 failed in 0.04s"
+}

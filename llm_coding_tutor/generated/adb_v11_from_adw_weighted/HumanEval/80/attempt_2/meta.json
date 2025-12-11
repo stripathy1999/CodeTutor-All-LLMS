@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 21:04:55",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "__________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function is_happy at 0x7e0caa83ca40>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate(\"a\") == False , \"a\"\n        assert candidate(\"aa\") == False , \"aa\"\n        assert candidate(\"abcd\") == True , \"abcd\"\n>       assert candidate(\"aabb\") == False , \"aabb\"\nE       AssertionError: aabb\nE       assert True == False\nE        +  where True = <function is_happy at 0x7e0caa83ca40>('aabb')\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: aabb\n1 failed in 0.04s"
+}

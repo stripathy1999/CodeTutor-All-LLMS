@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function order_by_points at 0x7dbe5cd8d440>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+E       assert [1, -1, 11, -11, -12] == [-1, -11, 1, -12, 11]
+E         
+E         At index 0 diff: 1 != -1
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [1, -1, 11, -11, -12] == [-1, -11,...
+1 failed in 0.04s

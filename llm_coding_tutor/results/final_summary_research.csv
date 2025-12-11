@@ -1,0 +1,5 @@
+variant,tasks,passed,pass_rate_%,95CI_%,Δ_vs_baseline_%,lat_mean_ms,lat_std_ms
+baseline,164,66,40.24,7.51,,1211.01,850.42
+primitive,164,20,12.2,5.01,-28.05,1193.99,53.17
+adw_weighted_v2_teaching,164,49,29.88,7.01,-10.37,1126.18,45.89
+adw→adb_v11 (combined),164,93,56.71,7.58,16.46,,

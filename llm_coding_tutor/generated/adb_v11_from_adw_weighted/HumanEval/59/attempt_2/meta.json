@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:11:04",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function largest_prime_factor at 0x7c9784515300>\n\n    def check(candidate):\n>       assert candidate(15) == 5\nE       assert 3 == 5\nE        +  where 3 = <function largest_prime_factor at 0x7c9784515300>(15)\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert 3 == 5\n1 failed in 0.04s"
+}

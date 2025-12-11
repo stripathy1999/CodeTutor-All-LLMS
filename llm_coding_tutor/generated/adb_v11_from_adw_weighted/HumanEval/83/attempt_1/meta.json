@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:16:19",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function starts_one_ends at 0x7d1a19a751c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n        assert candidate(1) == 1\n        assert candidate(2) == 18\n>       assert candidate(3) == 180\nE       assert 1710 == 180\nE        +  where 1710 = <function starts_one_ends at 0x7d1a19a751c0>(3)\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert 1710 == 180\n1 failed in 0.04s"
+}

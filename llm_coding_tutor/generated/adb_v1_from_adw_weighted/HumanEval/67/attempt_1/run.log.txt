@@ -1,0 +1,38 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate("5 apples and 6 oranges",19) == 8
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = '5 apples and 6 oranges', n = 19
+
+    def fruit_distribution(s, n):
+        """
+        In this task, you will be given a string that represents a number of apples and oranges
+        that are distributed in a basket of fruit this basket contains
+        apples, oranges, and mango fruits. Given the string that represents the total number of
+        the oranges and apples and an integer that represent the total number of the fruits
+        in the basket return the number of the mango fruits in the basket.
+        for examble:
+        fruit_distribution("5 apples and 6 oranges", 19) ->19 - 5 - 6 = 8
+        fruit_distribution("0 apples and 1 oranges",3) -> 3 - 0 - 1 = 2
+        fruit_distribution("2 apples and 3 oranges", 100) -> 100 - 2 - 3 = 95
+        fruit_distribution("100 apples and 1 oranges",120) -> 120 - 100 - 1 = 19
+        """
+        # Placeholder recovery: no code found
+>       return n - s
+               ^^^^^
+E       TypeError: unsupported operand type(s) for -: 'int' and 'str'
+
+solution.py:15: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: unsupported operand type(s) fo...
+1 failed in 0.04s

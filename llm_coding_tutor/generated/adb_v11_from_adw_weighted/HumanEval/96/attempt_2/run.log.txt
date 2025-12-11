@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function count_up_to at 0x78ab760013a0>
+
+    def check(candidate):
+    
+>       assert candidate(5) == [2,3]
+E       assert [2, 3, 5] == [2, 3]
+E         
+E         Left contains one more item: 5
+E         Use -v to get more diff
+
+test_solution.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [2, 3, 5] == [2, 3]
+1 failed in 0.04s

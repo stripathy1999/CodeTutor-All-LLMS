@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function modp at 0x78d508d81300>
+
+    def check(candidate):
+>       assert candidate(3, 5) == 3
+E       assert 4 == 3
+E        +  where 4 = <function modp at 0x78d508d81300>(3, 5)
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 4 == 3
+1 failed in 0.04s

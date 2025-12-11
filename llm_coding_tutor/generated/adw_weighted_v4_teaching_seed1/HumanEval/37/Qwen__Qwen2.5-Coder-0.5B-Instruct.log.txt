@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function sort_even at 0x78806a195300>
+
+    def check(candidate):
+        assert tuple(candidate([1, 2, 3])) == tuple([1, 2, 3])
+>       assert tuple(candidate([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])) == tuple([-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123])
+E       assert (-10, -5, -3, 0, 1, 2, ...) == (-10, 3, -5, 2, -3, 3, ...)
+E         
+E         At index 1 diff: -5 != 3
+E         Use -v to get more diff
+
+test_solution.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert (-10, -5, -3, 0, 1, 2, ...) == (-1...
+1 failed in 0.14s

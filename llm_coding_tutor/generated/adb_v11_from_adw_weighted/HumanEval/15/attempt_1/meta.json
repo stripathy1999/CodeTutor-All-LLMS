@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:54:18",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "       [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function string_sequence at 0x7f4f8d9e4900>\n\n    def check(candidate):\n        assert candidate(0) == '0'\n>       assert candidate(3) == '0 1 2 3'\nE       AssertionError: assert '0123' == '0 1 2 3'\nE         \nE         - 0 1 2 3\nE         + 0123\n\ntest_solution.py:16: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert '0123' == '0 1 2 3'\n1 failed in 0.04s"
+}

@@ -1,0 +1,43 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:8: in check
+    assert candidate("Hello world!") == ["Hello","world!"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+txt = 'Hello world!'
+
+    def split_words(txt):
+        '''
+        Given a string of words, return a list of words split on whitespace, if no whitespaces exists in the text you
+        should split on commas ',' if no commas exists you should return the number of lower-case letters with odd order in the
+        alphabet, ord('a') = 0, ord('b') = 1,... ord('z') = 25
+        Examples
+        split_words("Hello world!") ➞ ["Hello", "world!"]
+        split_words("Hello,world!") ➞ ["Hello", "world!"]
+        split_words("abcdef") == 3
+        '''
+        # Check for empty input
+        if not txt:
+            return []
+    
+        # Check for single-element input
+        if len(txt) == 1:
+            return [txt]
+    
+        # Check for negative input
+>       if txt[0] < 0:
+           ^^^^^^^^^^
+E       TypeError: '<' not supported between instances of 'str' and 'int'
+
+solution.py:20: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: '<' not supported between inst...
+1 failed in 0.04s

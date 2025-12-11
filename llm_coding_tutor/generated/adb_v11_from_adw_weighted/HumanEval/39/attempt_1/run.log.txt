@@ -1,0 +1,44 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:12: in check
+    assert candidate(1) == 2
+           ^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+n = 1
+
+    def prime_fib(n: int) -> int:
+        """
+        prime_fib returns n-th number that is a Fibonacci number and it's also prime.
+        >>> prime_fib(1)
+        2
+        >>> prime_fib(2)
+        3
+        >>> prime_fib(3)
+        5
+        >>> prime_fib(4)
+        13
+        >>> prime_fib(5)
+        89
+        """
+        # Initialize the first two Fibonacci numbers
+        fib1, fib2 = 0, 1
+    
+        # Generate Fibonacci numbers until we find the n-th prime
+        while True:
+            fib_next = fib1 + fib2
+>           if is_prime(fib_next):
+               ^^^^^^^^
+E           NameError: name 'is_prime' is not defined
+
+solution.py:21: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'is_prime' is not defined
+1 failed in 0.04s

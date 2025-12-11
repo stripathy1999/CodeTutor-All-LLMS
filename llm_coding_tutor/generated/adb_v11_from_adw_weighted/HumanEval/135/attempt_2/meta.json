@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:58:41",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "_________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function can_arrange at 0x7a24cd9e5300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate([1,2,4,3,5])==3\n        assert candidate([1,2,4,5])==-1\n        assert candidate([1,4,2,5,6,7,8,9,10])==2\n>       assert candidate([4,8,5,7,3])==4\nE       assert 2 == 4\nE        +  where 2 = <function can_arrange at 0x7a24cd9e5300>([4, 8, 5, 7, 3])\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert 2 == 4\n1 failed in 0.04s"
+}

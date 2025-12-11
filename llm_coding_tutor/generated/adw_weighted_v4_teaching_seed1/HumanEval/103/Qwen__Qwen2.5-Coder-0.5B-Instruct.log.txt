@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function rounded_avg at 0x7e8050ac5300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(1, 5) == "0b11"
+E       AssertionError: assert '0b00000011' == '0b11'
+E         
+E         - 0b11
+E         + 0b00000011
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '0b00000011' == '0...
+1 failed in 0.05s

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:52:52",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "____________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function max_fill at 0x7817ca0a9300>\n\n    def check(candidate):\n    \n    \n        # Check some simple cases\n        assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n>       assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, \"Error\"\nE       AssertionError: Error\nE       assert None == 6\nE        +  where None = <function max_fill at 0x7817ca0a9300>([[0, 0, 1, 0], [0, 1, 0, 0], [1, 1, 1, 1]], 1)\n\ntest_solution.py:11: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: Error\n1 failed in 0.04s"
+}

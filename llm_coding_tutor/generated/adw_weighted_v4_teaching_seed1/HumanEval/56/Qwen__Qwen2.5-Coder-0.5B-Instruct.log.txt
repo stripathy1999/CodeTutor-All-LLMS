@@ -1,0 +1,14 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import correct_bracketing as candidate
+solution.py:45: in <module>
+    check()
+solution.py:37: in check
+    assert correct_bracketing("<") == False, "Test case 1 failed"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Test case 1 failed
+=========================== short test summary info ============================
+ERROR test_solution.py - AssertionError: Test case 1 failed
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

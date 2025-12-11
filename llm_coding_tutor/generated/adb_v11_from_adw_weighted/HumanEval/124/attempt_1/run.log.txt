@@ -1,0 +1,23 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function valid_date at 0x7e9474325300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate('03-11-2000') == True
+E       AssertionError: assert None == True
+E        +  where None = <function valid_date at 0x7e9474325300>('03-11-2000')
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert None == True
+1 failed in 0.04s

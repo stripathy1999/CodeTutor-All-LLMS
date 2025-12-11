@@ -1,0 +1,566 @@
+task_id,variant,model,pass,fail_family,code,seed,gen_latency_ms,pytest_ms,timestamp
+HumanEval/0,controlled_failures_v1,synthetic_failures,0,empty_body,"def has_close_elements(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:09:30
+HumanEval/0,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def has_close_elements(x): return x+1,99,0,1102,2025-12-01 15:09:31
+HumanEval/0,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def has_close_elements(*args, **kwargs): return 42",99,0,1202,2025-12-01 15:09:32
+HumanEval/1,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def separate_paren_groups(x): return x+1,99,0,1202,2025-12-01 15:09:33
+HumanEval/1,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def separate_paren_groups(*args, **kwargs): return 42",99,0,1202,2025-12-01 15:09:34
+HumanEval/10,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def make_palindrome(x): return str(x),99,0,1202,2025-12-01 15:09:36
+HumanEval/10,controlled_failures_v1,synthetic_failures,0,empty_body,"def make_palindrome(*args, **kwargs):
+    pass",99,0,1202,2025-12-01 15:09:37
+HumanEval/100,controlled_failures_v1,synthetic_failures,0,print_not_return,def make_a_pile(x): print(x),99,0,1202,2025-12-01 15:09:38
+HumanEval/100,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def make_a_pile(lst):
+    for i in range(len(lst)+1): pass",99,0,1202,2025-12-01 15:09:39
+HumanEval/101,controlled_failures_v1,synthetic_failures,0,empty_body,"def words_string(*args, **kwargs):
+    pass",99,0,1202,2025-12-01 15:09:40
+HumanEval/101,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def words_string(x): return x+1,99,0,1202,2025-12-01 15:09:42
+HumanEval/102,controlled_failures_v1,synthetic_failures,0,empty_body,"def choose_num(*args, **kwargs):
+    pass",99,0,1202,2025-12-01 15:09:43
+HumanEval/102,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def choose_num(x): return x+1,99,0,1101,2025-12-01 15:09:44
+HumanEval/102,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def choose_num(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:09:45
+HumanEval/103,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def rounded_avg(*args, **kwargs): return 42",99,0,1202,2025-12-01 15:09:46
+HumanEval/103,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:09:47
+HumanEval/103,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def rounded_avg():
+return 5",99,0,1302,2025-12-01 15:09:49
+HumanEval/104,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def unique_digits(lst):
+    for i in range(len(lst)+1): pass",99,0,1202,2025-12-01 15:09:50
+HumanEval/104,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1302,2025-12-01 15:09:51
+HumanEval/105,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def by_length() 
+    pass",99,0,1402,2025-12-01 15:09:53
+HumanEval/105,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def by_length(x): return str(x),99,0,1101,2025-12-01 15:09:54
+HumanEval/105,controlled_failures_v1,synthetic_failures,0,print_not_return,def by_length(x): print(x),99,0,1102,2025-12-01 15:09:55
+HumanEval/106,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def f(x): return x+1,99,0,1102,2025-12-01 15:09:56
+HumanEval/106,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:09:57
+HumanEval/106,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def f():
+return 5",99,0,1202,2025-12-01 15:09:58
+HumanEval/107,controlled_failures_v1,synthetic_failures,0,recursive_error,def even_odd_palindrome(x): return even_odd_palindrome(x),99,0,1102,2025-12-01 15:09:59
+HumanEval/107,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def even_odd_palindrome(x): return x+1,99,0,1102,2025-12-01 15:10:00
+HumanEval/107,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def even_odd_palindrome(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:10:02
+HumanEval/108,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:10:03
+HumanEval/108,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def count_nums(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:10:04
+HumanEval/109,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def move_one_ball(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:10:05
+HumanEval/109,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def move_one_ball(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:10:06
+HumanEval/11,controlled_failures_v1,synthetic_failures,0,recursive_error,def string_xor(x): return string_xor(x),99,0,1102,2025-12-01 15:10:07
+HumanEval/11,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def string_xor(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:10:08
+HumanEval/110,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def exchange():
+return 5",99,0,1202,2025-12-01 15:10:10
+HumanEval/110,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def exchange() 
+    pass",99,0,1202,2025-12-01 15:10:11
+HumanEval/111,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def histogram(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:10:12
+HumanEval/111,controlled_failures_v1,synthetic_failures,0,empty_body,"def histogram(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:13
+HumanEval/112,controlled_failures_v1,synthetic_failures,0,empty_body,"def reverse_delete(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:14
+HumanEval/112,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def reverse_delete():
+return 5",99,0,1302,2025-12-01 15:10:15
+HumanEval/113,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def odd_count(x): return str(x),99,0,1102,2025-12-01 15:10:16
+HumanEval/113,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def odd_count() 
+    pass",99,0,1202,2025-12-01 15:10:18
+HumanEval/114,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:10:19
+HumanEval/114,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def minSubArraySum(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:10:20
+HumanEval/114,controlled_failures_v1,synthetic_failures,0,empty_body,"def minSubArraySum(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:21
+HumanEval/115,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def max_fill() 
+    pass",99,0,1202,2025-12-01 15:10:22
+HumanEval/115,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def max_fill(x): return x+1,99,0,1102,2025-12-01 15:10:23
+HumanEval/116,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def sort_array(x): return str(x),99,0,1102,2025-12-01 15:10:24
+HumanEval/116,controlled_failures_v1,synthetic_failures,0,recursive_error,def sort_array(x): return sort_array(x),99,0,1102,2025-12-01 15:10:26
+HumanEval/116,controlled_failures_v1,synthetic_failures,0,empty_body,"def sort_array(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:27
+HumanEval/117,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:10:28
+HumanEval/117,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def select_words(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:10:29
+HumanEval/118,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def get_closest_vowel(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:10:30
+HumanEval/118,controlled_failures_v1,synthetic_failures,0,print_not_return,def get_closest_vowel(x): print(x),99,0,1102,2025-12-01 15:10:31
+HumanEval/119,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def match_parens():
+return 5",99,0,1202,2025-12-01 15:10:32
+HumanEval/119,controlled_failures_v1,synthetic_failures,0,print_not_return,def match_parens(x): print(x),99,0,1102,2025-12-01 15:10:33
+HumanEval/119,controlled_failures_v1,synthetic_failures,0,recursive_error,def match_parens(x): return match_parens(x),99,0,1102,2025-12-01 15:10:35
+HumanEval/12,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def longest(x): return str(x),99,0,1102,2025-12-01 15:10:36
+HumanEval/12,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def longest(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:10:37
+HumanEval/120,controlled_failures_v1,synthetic_failures,0,empty_body,"def maximum(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:38
+HumanEval/120,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def maximum(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:10:39
+HumanEval/121,controlled_failures_v1,synthetic_failures,0,recursive_error,def solution(x): return solution(x),99,0,1102,2025-12-01 15:10:40
+HumanEval/121,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:10:41
+HumanEval/122,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def add_elements(x): return x+1,99,0,1101,2025-12-01 15:10:42
+HumanEval/122,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def add_elements(x): return str(x),99,0,1102,2025-12-01 15:10:44
+HumanEval/122,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def add_elements():
+return 5",99,0,1202,2025-12-01 15:10:45
+HumanEval/123,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def get_odd_collatz(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:10:46
+HumanEval/123,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def get_odd_collatz():
+return 5",99,0,1202,2025-12-01 15:10:47
+HumanEval/123,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def get_odd_collatz(x): return str(x),99,0,1102,2025-12-01 15:10:48
+HumanEval/124,controlled_failures_v1,synthetic_failures,0,print_not_return,def valid_date(x): print(x),99,0,1102,2025-12-01 15:10:49
+HumanEval/124,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def valid_date() 
+    pass",99,0,1202,2025-12-01 15:10:50
+HumanEval/125,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def split_words(x): return x+1,99,0,1101,2025-12-01 15:10:52
+HumanEval/125,controlled_failures_v1,synthetic_failures,0,empty_body,"def split_words(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:53
+HumanEval/125,controlled_failures_v1,synthetic_failures,0,recursive_error,def split_words(x): return split_words(x),99,0,1101,2025-12-01 15:10:54
+HumanEval/126,controlled_failures_v1,synthetic_failures,0,empty_body,"def is_sorted(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:10:55
+HumanEval/126,controlled_failures_v1,synthetic_failures,0,print_not_return,def is_sorted(x): print(x),99,0,1101,2025-12-01 15:10:56
+HumanEval/126,controlled_failures_v1,synthetic_failures,0,recursive_error,def is_sorted(x): return is_sorted(x),99,0,1102,2025-12-01 15:10:57
+HumanEval/127,controlled_failures_v1,synthetic_failures,0,recursive_error,def intersection(x): return intersection(x),99,0,1102,2025-12-01 15:10:58
+HumanEval/127,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def intersection():
+return 5",99,0,1202,2025-12-01 15:10:59
+HumanEval/127,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def intersection(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:11:00
+HumanEval/128,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:11:02
+HumanEval/128,controlled_failures_v1,synthetic_failures,0,empty_body,"def prod_signs(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:11:03
+HumanEval/129,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def minPath(x): return x+1,99,0,1101,2025-12-01 15:11:04
+HumanEval/129,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def minPath(x): return str(x),99,0,1101,2025-12-01 15:11:05
+HumanEval/129,controlled_failures_v1,synthetic_failures,0,print_not_return,def minPath(x): print(x),99,0,1102,2025-12-01 15:11:06
+HumanEval/13,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def greatest_common_divisor():
+return 5",99,0,1202,2025-12-01 15:11:07
+HumanEval/13,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:11:08
+HumanEval/13,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def greatest_common_divisor(x): return x+1,99,0,1102,2025-12-01 15:11:10
+HumanEval/130,controlled_failures_v1,synthetic_failures,0,empty_body,"def tri(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:11:11
+HumanEval/130,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def tri(x): return str(x),99,0,1101,2025-12-01 15:11:12
+HumanEval/131,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def digits():
+return 5",99,0,1202,2025-12-01 15:11:13
+HumanEval/131,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def digits(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:11:14
+HumanEval/131,controlled_failures_v1,synthetic_failures,0,empty_body,"def digits(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:11:15
+HumanEval/132,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def is_nested():
+return 5",99,0,1302,2025-12-01 15:11:16
+HumanEval/132,controlled_failures_v1,synthetic_failures,0,recursive_error,def is_nested(x): return is_nested(x),99,0,1302,2025-12-01 15:11:18
+HumanEval/132,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def is_nested(x): return str(x),99,0,1402,2025-12-01 15:11:19
+HumanEval/133,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def sum_squares(lst):
+    for i in range(len(lst)+1): pass",99,0,1202,2025-12-01 15:11:20
+HumanEval/133,controlled_failures_v1,synthetic_failures,0,recursive_error,def sum_squares(x): return sum_squares(x),99,0,1102,2025-12-01 15:11:22
+HumanEval/133,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def sum_squares(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:11:23
+HumanEval/134,controlled_failures_v1,synthetic_failures,0,empty_body,"def check_if_last_char_is_a_letter(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:11:24
+HumanEval/134,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def check_if_last_char_is_a_letter(x): return str(x),99,0,1101,2025-12-01 15:11:25
+HumanEval/134,controlled_failures_v1,synthetic_failures,0,print_not_return,def check_if_last_char_is_a_letter(x): print(x),99,0,1102,2025-12-01 15:11:26
+HumanEval/135,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def can_arrange(x): return str(x),99,0,1102,2025-12-01 15:11:27
+HumanEval/135,controlled_failures_v1,synthetic_failures,0,empty_body,"def can_arrange(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:11:28
+HumanEval/136,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def largest_smallest_integers(x): return x+1,99,0,1101,2025-12-01 15:11:29
+HumanEval/136,controlled_failures_v1,synthetic_failures,0,empty_body,"def largest_smallest_integers(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:11:30
+HumanEval/136,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1201,2025-12-01 15:11:32
+HumanEval/137,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:11:33
+HumanEval/137,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def compare_one() 
+    pass",99,0,1202,2025-12-01 15:11:34
+HumanEval/138,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def is_equal_to_sum_even(x): return str(x),99,0,1102,2025-12-01 15:11:35
+HumanEval/138,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def is_equal_to_sum_even(x): return x+1,99,0,1102,2025-12-01 15:11:36
+HumanEval/138,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def is_equal_to_sum_even(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:11:37
+HumanEval/139,controlled_failures_v1,synthetic_failures,0,empty_body,"def special_factorial(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:11:38
+HumanEval/139,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def special_factorial(x): return x+1,99,0,1101,2025-12-01 15:11:39
+HumanEval/139,controlled_failures_v1,synthetic_failures,0,print_not_return,def special_factorial(x): print(x),99,0,1101,2025-12-01 15:11:41
+HumanEval/14,controlled_failures_v1,synthetic_failures,0,empty_body,"def all_prefixes(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:11:42
+HumanEval/14,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def all_prefixes() 
+    pass",99,0,1201,2025-12-01 15:11:43
+HumanEval/14,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def all_prefixes():
+return 5",99,0,1202,2025-12-01 15:11:44
+HumanEval/140,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def fix_spaces() 
+    pass",99,0,1202,2025-12-01 15:11:45
+HumanEval/140,controlled_failures_v1,synthetic_failures,0,recursive_error,def fix_spaces(x): return fix_spaces(x),99,0,1101,2025-12-01 15:11:46
+HumanEval/141,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def file_name_check(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:11:47
+HumanEval/141,controlled_failures_v1,synthetic_failures,0,recursive_error,def file_name_check(x): return file_name_check(x),99,0,1101,2025-12-01 15:11:49
+HumanEval/141,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def file_name_check(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:11:50
+HumanEval/142,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def sum_squares(x): return str(x),99,0,1101,2025-12-01 15:11:51
+HumanEval/142,controlled_failures_v1,synthetic_failures,0,empty_body,"def sum_squares(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:11:52
+HumanEval/143,controlled_failures_v1,synthetic_failures,0,recursive_error,def words_in_sentence(x): return words_in_sentence(x),99,0,1101,2025-12-01 15:11:53
+HumanEval/143,controlled_failures_v1,synthetic_failures,0,print_not_return,def words_in_sentence(x): print(x),99,0,1101,2025-12-01 15:11:54
+HumanEval/143,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def words_in_sentence(x): return str(x),99,0,1101,2025-12-01 15:11:55
+HumanEval/144,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def simplify() 
+    pass",99,0,1202,2025-12-01 15:11:56
+HumanEval/144,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def simplify():
+return 5",99,0,1302,2025-12-01 15:11:58
+HumanEval/145,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def order_by_points():
+return 5",99,0,1202,2025-12-01 15:11:59
+HumanEval/145,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def order_by_points() 
+    pass",99,0,1202,2025-12-01 15:12:00
+HumanEval/145,controlled_failures_v1,synthetic_failures,0,recursive_error,def order_by_points(x): return order_by_points(x),99,0,1102,2025-12-01 15:12:01
+HumanEval/146,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def specialFilter(x): return str(x),99,0,1101,2025-12-01 15:12:02
+HumanEval/146,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1201,2025-12-01 15:12:04
+HumanEval/146,controlled_failures_v1,synthetic_failures,0,print_not_return,def specialFilter(x): print(x),99,0,1101,2025-12-01 15:12:05
+HumanEval/147,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def get_max_triples():
+return 5",99,0,1202,2025-12-01 15:12:06
+HumanEval/147,controlled_failures_v1,synthetic_failures,0,empty_body,"def get_max_triples(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:12:07
+HumanEval/148,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def bf(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:12:08
+HumanEval/148,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def bf(x): return str(x),99,0,1101,2025-12-01 15:12:09
+HumanEval/148,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def bf(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:12:10
+HumanEval/149,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def sorted_list_sum(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:12:11
+HumanEval/149,controlled_failures_v1,synthetic_failures,0,print_not_return,def sorted_list_sum(x): print(x),99,0,1102,2025-12-01 15:12:12
+HumanEval/149,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def sorted_list_sum(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:12:14
+HumanEval/15,controlled_failures_v1,synthetic_failures,0,empty_body,"def string_sequence(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:12:15
+HumanEval/15,controlled_failures_v1,synthetic_failures,0,recursive_error,def string_sequence(x): return string_sequence(x),99,0,1101,2025-12-01 15:12:16
+HumanEval/15,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def string_sequence(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:12:17
+HumanEval/150,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def x_or_y(x): return str(x),99,0,1102,2025-12-01 15:12:18
+HumanEval/150,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def x_or_y(x): return x+1,99,0,1102,2025-12-01 15:12:19
+HumanEval/150,controlled_failures_v1,synthetic_failures,0,print_not_return,def x_or_y(x): print(x),99,0,1102,2025-12-01 15:12:20
+HumanEval/151,controlled_failures_v1,synthetic_failures,0,print_not_return,def double_the_difference(x): print(x),99,0,1102,2025-12-01 15:12:21
+HumanEval/151,controlled_failures_v1,synthetic_failures,0,empty_body,"def double_the_difference(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:12:22
+HumanEval/151,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def double_the_difference(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:12:23
+HumanEval/152,controlled_failures_v1,synthetic_failures,0,print_not_return,def compare(x): print(x),99,0,1102,2025-12-01 15:12:25
+HumanEval/152,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def compare(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:12:26
+HumanEval/152,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def compare(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:12:27
+HumanEval/153,controlled_failures_v1,synthetic_failures,0,recursive_error,def Strongest_Extension(x): return Strongest_Extension(x),99,0,1101,2025-12-01 15:12:28
+HumanEval/153,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def Strongest_Extension(x): return x+1,99,0,1101,2025-12-01 15:12:29
+HumanEval/154,controlled_failures_v1,synthetic_failures,0,recursive_error,def cycpattern_check(x): return cycpattern_check(x),99,0,1102,2025-12-01 15:12:30
+HumanEval/154,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def cycpattern_check() 
+    pass",99,0,1202,2025-12-01 15:12:31
+HumanEval/154,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def cycpattern_check():
+return 5",99,0,1302,2025-12-01 15:12:33
+HumanEval/155,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def even_odd_count(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:12:34
+HumanEval/155,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def even_odd_count():
+return 5",99,0,1202,2025-12-01 15:12:35
+HumanEval/155,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:12:36
+HumanEval/156,controlled_failures_v1,synthetic_failures,0,print_not_return,def int_to_mini_roman(x): print(x),99,0,1102,2025-12-01 15:12:37
+HumanEval/156,controlled_failures_v1,synthetic_failures,0,recursive_error,def int_to_mini_roman(x): return int_to_mini_roman(x),99,0,1102,2025-12-01 15:12:38
+HumanEval/157,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def right_angle_triangle() 
+    pass",99,0,1202,2025-12-01 15:12:40
+HumanEval/157,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:12:41
+HumanEval/157,controlled_failures_v1,synthetic_failures,0,empty_body,"def right_angle_triangle(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:12:42
+HumanEval/158,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def find_max(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:12:43
+HumanEval/158,controlled_failures_v1,synthetic_failures,0,print_not_return,def find_max(x): print(x),99,0,1101,2025-12-01 15:12:44
+HumanEval/158,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def find_max() 
+    pass",99,0,1302,2025-12-01 15:12:45
+HumanEval/159,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def eat() 
+    pass",99,0,1302,2025-12-01 15:12:47
+HumanEval/159,controlled_failures_v1,synthetic_failures,0,print_not_return,def eat(x): print(x),99,0,1101,2025-12-01 15:12:48
+HumanEval/159,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:12:49
+HumanEval/16,controlled_failures_v1,synthetic_failures,0,recursive_error,def count_distinct_characters(x): return count_distinct_characters(x),99,0,1102,2025-12-01 15:12:50
+HumanEval/16,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def count_distinct_characters(x): return str(x),99,0,1102,2025-12-01 15:12:51
+HumanEval/160,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def do_algebra(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:12:52
+HumanEval/160,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def do_algebra() 
+    pass",99,0,1202,2025-12-01 15:12:53
+HumanEval/161,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def solve(x): return x+1,99,0,1102,2025-12-01 15:12:55
+HumanEval/161,controlled_failures_v1,synthetic_failures,0,print_not_return,def solve(x): print(x),99,0,1102,2025-12-01 15:12:56
+HumanEval/161,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def solve():
+return 5",99,0,1302,2025-12-01 15:12:57
+HumanEval/162,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def string_to_md5(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:12:58
+HumanEval/162,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def string_to_md5(x): return str(x),99,0,1102,2025-12-01 15:12:59
+HumanEval/162,controlled_failures_v1,synthetic_failures,0,recursive_error,def string_to_md5(x): return string_to_md5(x),99,0,1101,2025-12-01 15:13:00
+HumanEval/163,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def generate_integers():
+return 5",99,0,1202,2025-12-01 15:13:01
+HumanEval/163,controlled_failures_v1,synthetic_failures,0,recursive_error,def generate_integers(x): return generate_integers(x),99,0,1101,2025-12-01 15:13:03
+HumanEval/163,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def generate_integers(x): return x+1,99,0,1101,2025-12-01 15:13:04
+HumanEval/17,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:05
+HumanEval/17,controlled_failures_v1,synthetic_failures,0,recursive_error,def parse_music(x): return parse_music(x),99,0,1101,2025-12-01 15:13:06
+HumanEval/18,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def how_many_times():
+return 5",99,0,1202,2025-12-01 15:13:07
+HumanEval/18,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def how_many_times(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:13:08
+HumanEval/19,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def sort_numbers(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:13:09
+HumanEval/19,controlled_failures_v1,synthetic_failures,0,recursive_error,def sort_numbers(x): return sort_numbers(x),99,0,1102,2025-12-01 15:13:10
+HumanEval/2,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def truncate_number() 
+    pass",99,0,1202,2025-12-01 15:13:12
+HumanEval/2,controlled_failures_v1,synthetic_failures,0,recursive_error,def truncate_number(x): return truncate_number(x),99,0,1102,2025-12-01 15:13:13
+HumanEval/20,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def find_closest_elements(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:13:14
+HumanEval/20,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:15
+HumanEval/20,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def find_closest_elements(x): return x+1,99,0,1102,2025-12-01 15:13:16
+HumanEval/21,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:17
+HumanEval/21,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def rescale_to_unit() 
+    pass",99,0,1202,2025-12-01 15:13:19
+HumanEval/22,controlled_failures_v1,synthetic_failures,0,empty_body,"def filter_integers(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:13:20
+HumanEval/22,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def filter_integers(x): return x+1,99,0,1102,2025-12-01 15:13:21
+HumanEval/22,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def filter_integers(x): return str(x),99,0,1101,2025-12-01 15:13:22
+HumanEval/23,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def strlen():
+return 5",99,0,1302,2025-12-01 15:13:23
+HumanEval/23,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def strlen(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:13:24
+HumanEval/24,controlled_failures_v1,synthetic_failures,0,recursive_error,def largest_divisor(x): return largest_divisor(x),99,0,1101,2025-12-01 15:13:25
+HumanEval/24,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def largest_divisor() 
+    pass",99,0,1202,2025-12-01 15:13:27
+HumanEval/24,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def largest_divisor(x): return x+1,99,0,1101,2025-12-01 15:13:28
+HumanEval/25,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def factorize():
+return 5",99,0,1202,2025-12-01 15:13:29
+HumanEval/25,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def factorize(x): return x+1,99,0,1101,2025-12-01 15:13:30
+HumanEval/25,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def factorize(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:13:31
+HumanEval/26,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def remove_duplicates(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:13:32
+HumanEval/26,controlled_failures_v1,synthetic_failures,0,print_not_return,def remove_duplicates(x): print(x),99,0,1102,2025-12-01 15:13:33
+HumanEval/27,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:35
+HumanEval/27,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def flip_case(x): return str(x),99,0,1102,2025-12-01 15:13:36
+HumanEval/27,controlled_failures_v1,synthetic_failures,0,print_not_return,def flip_case(x): print(x),99,0,1202,2025-12-01 15:13:37
+HumanEval/28,controlled_failures_v1,synthetic_failures,0,print_not_return,def concatenate(x): print(x),99,0,1101,2025-12-01 15:13:38
+HumanEval/28,controlled_failures_v1,synthetic_failures,0,empty_body,"def concatenate(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:13:39
+HumanEval/29,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def filter_by_prefix(x): return str(x),99,0,1101,2025-12-01 15:13:40
+HumanEval/29,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def filter_by_prefix(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:13:41
+HumanEval/3,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def below_zero() 
+    pass",99,0,1202,2025-12-01 15:13:42
+HumanEval/3,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def below_zero(x): return str(x),99,0,1101,2025-12-01 15:13:44
+HumanEval/30,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def get_positive(x): return str(x),99,0,1102,2025-12-01 15:13:45
+HumanEval/30,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def get_positive():
+return 5",99,0,1202,2025-12-01 15:13:46
+HumanEval/30,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def get_positive(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:13:47
+HumanEval/31,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def is_prime():
+return 5",99,0,1202,2025-12-01 15:13:48
+HumanEval/31,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def is_prime() 
+    pass",99,0,1202,2025-12-01 15:13:49
+HumanEval/31,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:51
+HumanEval/32,controlled_failures_v1,synthetic_failures,0,print_not_return,def find_zero(x): print(x),99,0,1102,2025-12-01 15:13:52
+HumanEval/32,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:53
+HumanEval/33,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:13:54
+HumanEval/33,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def sort_third() 
+    pass",99,0,1202,2025-12-01 15:13:55
+HumanEval/33,controlled_failures_v1,synthetic_failures,0,empty_body,"def sort_third(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:13:56
+HumanEval/34,controlled_failures_v1,synthetic_failures,0,print_not_return,def unique(x): print(x),99,0,1102,2025-12-01 15:13:58
+HumanEval/34,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def unique(x): return x+1,99,0,1102,2025-12-01 15:13:59
+HumanEval/34,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def unique(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:14:00
+HumanEval/35,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def max_element(x): return str(x),99,0,1101,2025-12-01 15:14:01
+HumanEval/35,controlled_failures_v1,synthetic_failures,0,empty_body,"def max_element(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:14:02
+HumanEval/36,controlled_failures_v1,synthetic_failures,0,recursive_error,def fizz_buzz(x): return fizz_buzz(x),99,0,1102,2025-12-01 15:14:03
+HumanEval/36,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def fizz_buzz(x): return x+1,99,0,1101,2025-12-01 15:14:04
+HumanEval/36,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def fizz_buzz(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:14:05
+HumanEval/37,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def sort_even() 
+    pass",99,0,1202,2025-12-01 15:14:06
+HumanEval/37,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def sort_even(x): return x+1,99,0,1101,2025-12-01 15:14:08
+HumanEval/37,controlled_failures_v1,synthetic_failures,0,recursive_error,def sort_even(x): return sort_even(x),99,0,1102,2025-12-01 15:14:09
+HumanEval/38,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def decode_cyclic(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:14:10
+HumanEval/38,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def decode_cyclic():
+return 5",99,0,1201,2025-12-01 15:14:11
+HumanEval/38,controlled_failures_v1,synthetic_failures,0,empty_body,"def decode_cyclic(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:14:12
+HumanEval/39,controlled_failures_v1,synthetic_failures,0,print_not_return,def prime_fib(x): print(x),99,0,1102,2025-12-01 15:14:13
+HumanEval/39,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def prime_fib() 
+    pass",99,0,1202,2025-12-01 15:14:14
+HumanEval/4,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def mean_absolute_deviation(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:14:15
+HumanEval/4,controlled_failures_v1,synthetic_failures,0,print_not_return,def mean_absolute_deviation(x): print(x),99,0,1101,2025-12-01 15:14:17
+HumanEval/40,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def triples_sum_to_zero() 
+    pass",99,0,1202,2025-12-01 15:14:18
+HumanEval/40,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def triples_sum_to_zero(x): return str(x),99,0,1102,2025-12-01 15:14:19
+HumanEval/40,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def triples_sum_to_zero(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:14:20
+HumanEval/41,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def car_race_collision(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:14:21
+HumanEval/41,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def car_race_collision() 
+    pass",99,0,1201,2025-12-01 15:14:22
+HumanEval/41,controlled_failures_v1,synthetic_failures,0,recursive_error,def car_race_collision(x): return car_race_collision(x),99,0,1102,2025-12-01 15:14:23
+HumanEval/42,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def incr_list(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:14:24
+HumanEval/42,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def incr_list():
+return 5",99,0,1302,2025-12-01 15:14:26
+HumanEval/42,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def incr_list(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:14:27
+HumanEval/43,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:14:28
+HumanEval/43,controlled_failures_v1,synthetic_failures,0,empty_body,"def pairs_sum_to_zero(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:14:29
+HumanEval/44,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def change_base(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:14:30
+HumanEval/44,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def change_base():
+return 5",99,0,1202,2025-12-01 15:14:32
+HumanEval/45,controlled_failures_v1,synthetic_failures,0,recursive_error,def triangle_area(x): return triangle_area(x),99,0,1102,2025-12-01 15:14:33
+HumanEval/45,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def triangle_area(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:14:34
+HumanEval/45,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def triangle_area(x): return x+1,99,0,1102,2025-12-01 15:14:35
+HumanEval/46,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def fib4(x): return x+1,99,0,1102,2025-12-01 15:14:36
+HumanEval/46,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def fib4():
+return 5",99,0,1202,2025-12-01 15:14:37
+HumanEval/46,controlled_failures_v1,synthetic_failures,0,empty_body,"def fib4(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:14:38
+HumanEval/47,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def median(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:14:39
+HumanEval/47,controlled_failures_v1,synthetic_failures,0,print_not_return,def median(x): print(x),99,0,1102,2025-12-01 15:14:40
+HumanEval/48,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def is_palindrome(x): return x+1,99,0,1102,2025-12-01 15:14:42
+HumanEval/48,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def is_palindrome(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:14:43
+HumanEval/48,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def is_palindrome(x): return str(x),99,0,1101,2025-12-01 15:14:44
+HumanEval/49,controlled_failures_v1,synthetic_failures,0,recursive_error,def modp(x): return modp(x),99,0,1102,2025-12-01 15:14:45
+HumanEval/49,controlled_failures_v1,synthetic_failures,0,print_not_return,def modp(x): print(x),99,0,1102,2025-12-01 15:14:46
+HumanEval/5,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def intersperse(x): return x+1,99,0,1101,2025-12-01 15:14:47
+HumanEval/5,controlled_failures_v1,synthetic_failures,0,print_not_return,def intersperse(x): print(x),99,0,1102,2025-12-01 15:14:48
+HumanEval/50,controlled_failures_v1,synthetic_failures,0,empty_body,"def decode_shift(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:14:49
+HumanEval/50,controlled_failures_v1,synthetic_failures,0,print_not_return,def decode_shift(x): print(x),99,0,1102,2025-12-01 15:14:50
+HumanEval/51,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def remove_vowels(x): return x+1,99,0,1102,2025-12-01 15:14:51
+HumanEval/51,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def remove_vowels(x): return str(x),99,0,1102,2025-12-01 15:14:53
+HumanEval/52,controlled_failures_v1,synthetic_failures,0,print_not_return,def below_threshold(x): print(x),99,0,1102,2025-12-01 15:14:54
+HumanEval/52,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:14:55
+HumanEval/52,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def below_threshold(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:14:56
+HumanEval/53,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def add():
+return 5",99,0,1202,2025-12-01 15:14:57
+HumanEval/53,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def add() 
+    pass",99,0,1202,2025-12-01 15:14:58
+HumanEval/54,controlled_failures_v1,synthetic_failures,0,empty_body,"def same_chars(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:14:59
+HumanEval/54,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def same_chars() 
+    pass",99,0,1302,2025-12-01 15:15:01
+HumanEval/55,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def fib(x): return x+1,99,0,1101,2025-12-01 15:15:02
+HumanEval/55,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def fib() 
+    pass",99,0,1302,2025-12-01 15:15:03
+HumanEval/55,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def fib(x): return str(x),99,0,1102,2025-12-01 15:15:04
+HumanEval/56,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def correct_bracketing(x): return str(x),99,0,1102,2025-12-01 15:15:05
+HumanEval/56,controlled_failures_v1,synthetic_failures,0,print_not_return,def correct_bracketing(x): print(x),99,0,1102,2025-12-01 15:15:07
+HumanEval/57,controlled_failures_v1,synthetic_failures,0,print_not_return,def monotonic(x): print(x),99,0,1102,2025-12-01 15:15:08
+HumanEval/57,controlled_failures_v1,synthetic_failures,0,recursive_error,def monotonic(x): return monotonic(x),99,0,1102,2025-12-01 15:15:09
+HumanEval/58,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def common(x): return x+1,99,0,1102,2025-12-01 15:15:10
+HumanEval/58,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:11
+HumanEval/58,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def common():
+return 5",99,0,1202,2025-12-01 15:15:12
+HumanEval/59,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:13
+HumanEval/59,controlled_failures_v1,synthetic_failures,0,empty_body,"def largest_prime_factor(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:15:15
+HumanEval/6,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def parse_nested_parens(x): return str(x),99,0,1102,2025-12-01 15:15:16
+HumanEval/6,controlled_failures_v1,synthetic_failures,0,recursive_error,def parse_nested_parens(x): return parse_nested_parens(x),99,0,1102,2025-12-01 15:15:17
+HumanEval/60,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def sum_to_n(x): return x+1,99,0,1102,2025-12-01 15:15:18
+HumanEval/60,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def sum_to_n(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:15:19
+HumanEval/60,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def sum_to_n() 
+    pass",99,0,1202,2025-12-01 15:15:20
+HumanEval/61,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:21
+HumanEval/61,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def correct_bracketing(x): return x+1,99,0,1102,2025-12-01 15:15:22
+HumanEval/62,controlled_failures_v1,synthetic_failures,0,print_not_return,def derivative(x): print(x),99,0,1101,2025-12-01 15:15:24
+HumanEval/62,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def derivative():
+return 5",99,0,1202,2025-12-01 15:15:25
+HumanEval/63,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def fibfib() 
+    pass",99,0,1302,2025-12-01 15:15:26
+HumanEval/63,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:27
+HumanEval/63,controlled_failures_v1,synthetic_failures,0,recursive_error,def fibfib(x): return fibfib(x),99,0,1101,2025-12-01 15:15:28
+HumanEval/64,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def vowels_count(x): return x+1,99,0,1102,2025-12-01 15:15:29
+HumanEval/64,controlled_failures_v1,synthetic_failures,0,recursive_error,def vowels_count(x): return vowels_count(x),99,0,1102,2025-12-01 15:15:31
+HumanEval/64,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def vowels_count(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:15:32
+HumanEval/65,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def circular_shift() 
+    pass",99,0,1202,2025-12-01 15:15:33
+HumanEval/65,controlled_failures_v1,synthetic_failures,0,print_not_return,def circular_shift(x): print(x),99,0,1102,2025-12-01 15:15:34
+HumanEval/66,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def digitSum(x): return x+1,99,0,1102,2025-12-01 15:15:35
+HumanEval/66,controlled_failures_v1,synthetic_failures,0,print_not_return,def digitSum(x): print(x),99,0,1102,2025-12-01 15:15:36
+HumanEval/67,controlled_failures_v1,synthetic_failures,0,print_not_return,def fruit_distribution(x): print(x),99,0,1102,2025-12-01 15:15:37
+HumanEval/67,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def fruit_distribution(x): return str(x),99,0,1101,2025-12-01 15:15:38
+HumanEval/67,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def fruit_distribution():
+return 5",99,0,1202,2025-12-01 15:15:40
+HumanEval/68,controlled_failures_v1,synthetic_failures,0,empty_body,"def pluck(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:15:41
+HumanEval/68,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def pluck():
+return 5",99,0,1202,2025-12-01 15:15:42
+HumanEval/69,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def search():
+return 5",99,0,1202,2025-12-01 15:15:43
+HumanEval/69,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:44
+HumanEval/69,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def search(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:15:45
+HumanEval/7,controlled_failures_v1,synthetic_failures,0,recursive_error,def filter_by_substring(x): return filter_by_substring(x),99,0,1102,2025-12-01 15:15:47
+HumanEval/7,controlled_failures_v1,synthetic_failures,0,empty_body,"def filter_by_substring(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:15:48
+HumanEval/7,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def filter_by_substring(x): return str(x),99,0,1102,2025-12-01 15:15:49
+HumanEval/70,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:50
+HumanEval/70,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def strange_sort_list():
+return 5",99,0,1202,2025-12-01 15:15:51
+HumanEval/70,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def strange_sort_list(x): return str(x),99,0,1102,2025-12-01 15:15:52
+HumanEval/71,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def triangle_area():
+return 5",99,0,1202,2025-12-01 15:15:53
+HumanEval/71,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def triangle_area() 
+    pass",99,0,1202,2025-12-01 15:15:55
+HumanEval/72,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def will_it_fly(x): return str(x),99,0,1102,2025-12-01 15:15:56
+HumanEval/72,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:15:57
+HumanEval/73,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def smallest_change(x): return str(x),99,0,1102,2025-12-01 15:15:58
+HumanEval/73,controlled_failures_v1,synthetic_failures,0,print_not_return,def smallest_change(x): print(x),99,0,1102,2025-12-01 15:15:59
+HumanEval/74,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def total_match(x): return x+1,99,0,1102,2025-12-01 15:16:00
+HumanEval/74,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def total_match(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:16:01
+HumanEval/75,controlled_failures_v1,synthetic_failures,0,recursive_error,def is_multiply_prime(x): return is_multiply_prime(x),99,0,1102,2025-12-01 15:16:02
+HumanEval/75,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def is_multiply_prime() 
+    pass",99,0,1302,2025-12-01 15:16:04
+HumanEval/75,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def is_multiply_prime(x): return str(x),99,0,1102,2025-12-01 15:16:05
+HumanEval/76,controlled_failures_v1,synthetic_failures,0,empty_body,"def is_simple_power(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:16:06
+HumanEval/76,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def is_simple_power():
+return 5",99,0,1202,2025-12-01 15:16:07
+HumanEval/77,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def iscube(x): return str(x),99,0,1101,2025-12-01 15:16:08
+HumanEval/77,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def iscube(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:16:09
+HumanEval/78,controlled_failures_v1,synthetic_failures,0,empty_body,"def hex_key(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:16:10
+HumanEval/78,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1201,2025-12-01 15:16:12
+HumanEval/78,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def hex_key(x): return x+1,99,0,1101,2025-12-01 15:16:13
+HumanEval/79,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def decimal_to_binary(x): return str(x),99,0,1101,2025-12-01 15:16:14
+HumanEval/79,controlled_failures_v1,synthetic_failures,0,empty_body,"def decimal_to_binary(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:16:15
+HumanEval/8,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def sum_product():
+return 5",99,0,1202,2025-12-01 15:16:16
+HumanEval/8,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def sum_product(x): return str(x),99,0,1102,2025-12-01 15:16:17
+HumanEval/80,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def is_happy(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:16:18
+HumanEval/80,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:16:20
+HumanEval/80,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def is_happy():
+return 5",99,0,1202,2025-12-01 15:16:21
+HumanEval/81,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def numerical_letter_grade() 
+    pass",99,0,1202,2025-12-01 15:16:22
+HumanEval/81,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def numerical_letter_grade():
+return 5",99,0,1202,2025-12-01 15:16:23
+HumanEval/82,controlled_failures_v1,synthetic_failures,0,empty_body,"def prime_length(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:16:24
+HumanEval/82,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def prime_length(x): return x+1,99,0,1102,2025-12-01 15:16:25
+HumanEval/83,controlled_failures_v1,synthetic_failures,0,print_not_return,def starts_one_ends(x): print(x),99,0,1102,2025-12-01 15:16:27
+HumanEval/83,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def starts_one_ends() 
+    pass",99,0,1202,2025-12-01 15:16:28
+HumanEval/83,controlled_failures_v1,synthetic_failures,0,recursive_error,def starts_one_ends(x): return starts_one_ends(x),99,0,1102,2025-12-01 15:16:29
+HumanEval/84,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:16:30
+HumanEval/84,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def solve(x): return x+1,99,0,1102,2025-12-01 15:16:31
+HumanEval/85,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def add():
+return 5",99,0,1202,2025-12-01 15:16:32
+HumanEval/85,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def add() 
+    pass",99,0,1202,2025-12-01 15:16:34
+HumanEval/86,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def anti_shuffle(x): return str(x),99,0,1102,2025-12-01 15:16:35
+HumanEval/86,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def anti_shuffle(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:16:36
+HumanEval/86,controlled_failures_v1,synthetic_failures,0,recursive_error,def anti_shuffle(x): return anti_shuffle(x),99,0,1102,2025-12-01 15:16:37
+HumanEval/87,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def get_row(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:16:38
+HumanEval/87,controlled_failures_v1,synthetic_failures,0,empty_body,"def get_row(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:16:39
+HumanEval/87,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def get_row():
+return 5",99,0,1202,2025-12-01 15:16:40
+HumanEval/88,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def sort_array(*args, **kwargs): return 42",99,0,1101,2025-12-01 15:16:41
+HumanEval/88,controlled_failures_v1,synthetic_failures,0,empty_body,"def sort_array(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:16:42
+HumanEval/88,controlled_failures_v1,synthetic_failures,0,recursive_error,def sort_array(x): return sort_array(x),99,0,1102,2025-12-01 15:16:44
+HumanEval/89,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def encrypt():
+return 5",99,0,1202,2025-12-01 15:16:45
+HumanEval/89,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def encrypt(x): return str(x),99,0,1101,2025-12-01 15:16:46
+HumanEval/9,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def rolling_max(x): return str(x),99,0,1102,2025-12-01 15:16:47
+HumanEval/9,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def rolling_max(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:16:48
+HumanEval/9,controlled_failures_v1,synthetic_failures,0,print_not_return,def rolling_max(x): print(x),99,0,1102,2025-12-01 15:16:49
+HumanEval/90,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def next_smallest() 
+    pass",99,0,1202,2025-12-01 15:16:50
+HumanEval/90,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def next_smallest():
+return 5",99,0,1302,2025-12-01 15:16:52
+HumanEval/91,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def is_bored(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:16:53
+HumanEval/91,controlled_failures_v1,synthetic_failures,0,empty_body,"def is_bored(*args, **kwargs):
+    pass",99,0,1101,2025-12-01 15:16:54
+HumanEval/91,controlled_failures_v1,synthetic_failures,0,logic_constant_output,"def is_bored(*args, **kwargs): return 42",99,0,1102,2025-12-01 15:16:55
+HumanEval/92,controlled_failures_v1,synthetic_failures,0,print_not_return,def any_int(x): print(x),99,0,1102,2025-12-01 15:16:56
+HumanEval/92,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def any_int(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:16:57
+HumanEval/92,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def any_int(x): return x+1,99,0,1102,2025-12-01 15:16:58
+HumanEval/93,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def encode(lst):
+    for i in range(len(lst)+1): pass",99,0,1101,2025-12-01 15:16:59
+HumanEval/93,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def encode(x): return str(x),99,0,1102,2025-12-01 15:17:01
+HumanEval/93,controlled_failures_v1,synthetic_failures,0,recursive_error,def encode(x): return encode(x),99,0,1101,2025-12-01 15:17:02
+HumanEval/94,controlled_failures_v1,synthetic_failures,0,loop_wrong,"def skjkasdkd(lst):
+    for i in range(len(lst)+1): pass",99,0,1102,2025-12-01 15:17:03
+HumanEval/94,controlled_failures_v1,synthetic_failures,0,wrong_data_type,def skjkasdkd(x): return str(x),99,0,1102,2025-12-01 15:17:04
+HumanEval/95,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def check_dict_case(x): return x+1,99,0,1101,2025-12-01 15:17:05
+HumanEval/95,controlled_failures_v1,synthetic_failures,0,signature_changed,def wrong_name(x): return x,99,0,1202,2025-12-01 15:17:06
+HumanEval/96,controlled_failures_v1,synthetic_failures,0,recursive_error,def count_up_to(x): return count_up_to(x),99,0,1102,2025-12-01 15:17:07
+HumanEval/96,controlled_failures_v1,synthetic_failures,0,logic_off_by_one,def count_up_to(x): return x+1,99,0,1101,2025-12-01 15:17:08
+HumanEval/97,controlled_failures_v1,synthetic_failures,0,print_not_return,def multiply(x): print(x),99,0,1102,2025-12-01 15:17:09
+HumanEval/97,controlled_failures_v1,synthetic_failures,0,recursive_error,def multiply(x): return multiply(x),99,0,1101,2025-12-01 15:17:11
+HumanEval/97,controlled_failures_v1,synthetic_failures,0,syntax_bad_indent,"def multiply():
+return 5",99,0,1202,2025-12-01 15:17:12
+HumanEval/98,controlled_failures_v1,synthetic_failures,0,recursive_error,def count_upper(x): return count_upper(x),99,0,1102,2025-12-01 15:17:13
+HumanEval/98,controlled_failures_v1,synthetic_failures,0,empty_body,"def count_upper(*args, **kwargs):
+    pass",99,0,1102,2025-12-01 15:17:14
+HumanEval/99,controlled_failures_v1,synthetic_failures,0,print_not_return,def closest_integer(x): print(x),99,0,1102,2025-12-01 15:17:15
+HumanEval/99,controlled_failures_v1,synthetic_failures,0,syntax_missing_colon,"def closest_integer() 
+    pass",99,0,1202,2025-12-01 15:17:16

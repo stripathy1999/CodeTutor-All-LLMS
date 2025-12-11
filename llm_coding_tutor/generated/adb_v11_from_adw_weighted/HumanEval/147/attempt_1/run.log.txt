@@ -1,0 +1,22 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function get_max_triples at 0x79bd56f293a0>
+
+    def check(candidate):
+    
+>       assert candidate(5) == 1
+E       assert 4 == 1
+E        +  where 4 = <function get_max_triples at 0x79bd56f293a0>(5)
+
+test_solution.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 4 == 1
+1 failed in 0.04s

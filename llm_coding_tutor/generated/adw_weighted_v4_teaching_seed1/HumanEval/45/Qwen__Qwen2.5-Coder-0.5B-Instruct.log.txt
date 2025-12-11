@@ -1,0 +1,17 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import triangle_area as candidate
+solution.py:17: in <module>
+    print(triangle_area(7, 0))   # Output: ValueError
+          ^^^^^^^^^^^^^^^^^^^
+solution.py:10: in triangle_area
+    raise ValueError("Side lengths must be positive numbers.")
+E   ValueError: Side lengths must be positive numbers.
+------------------------------- Captured stdout --------------------------------
+7.5
+10.0
+=========================== short test summary info ============================
+ERROR test_solution.py - ValueError: Side lengths must be positive numbers.
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.12s

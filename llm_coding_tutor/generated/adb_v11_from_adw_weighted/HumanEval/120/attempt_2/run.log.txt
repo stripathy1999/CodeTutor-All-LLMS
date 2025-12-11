@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function maximum at 0x7906ed5b11c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate([-3, -4, 5], 3) == [-4, -3, 5]
+E       assert [5, -3, -4] == [-4, -3, 5]
+E         
+E         At index 0 diff: 5 != -4
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [5, -3, -4] == [-4, -3, 5]
+1 failed in 0.04s

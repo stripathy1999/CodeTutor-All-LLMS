@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:15:34",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                   [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function decimal_to_binary at 0x7a414bcb5300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate(0) == \"db0db\"\nE       AssertionError: assert '0' == 'db0db'\nE         \nE         - db0db\nE         + 0\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert '0' == 'db0db'\n1 failed in 0.04s"
+}

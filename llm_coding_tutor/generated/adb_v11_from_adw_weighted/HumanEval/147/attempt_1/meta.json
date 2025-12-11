@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:01:31",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function get_max_triples at 0x79bd56f293a0>\n\n    def check(candidate):\n    \n>       assert candidate(5) == 1\nE       assert 4 == 1\nE        +  where 4 = <function get_max_triples at 0x79bd56f293a0>(5)\n\ntest_solution.py:8: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert 4 == 1\n1 failed in 0.04s"
+}

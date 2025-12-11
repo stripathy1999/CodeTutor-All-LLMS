@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:09:09",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": " _ _ _ _ _ \ntest_solution.py:12: in check\n    assert candidate(5, 3) == 7.5\n           ^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\na = 5, h = 3\n\n    def triangle_area(a, h):\n        \"\"\"Given length of a side and high return area for a triangle.\n        >>> triangle_area(5, 3)\n        7.5\n        \"\"\"\n        # Calculate the semi-perimeter\n        s = (a + h) / 2\n    \n        # Calculate the area using Heron's formula\n>       area = math.sqrt(s * (s - a) * (s - h))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       ValueError: math domain error\n\nsolution.py:12: ValueError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - ValueError: math domain error\n1 failed in 0.04s"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:44:56",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1103,
+  "traceback_tail": "         [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function even_odd_palindrome at 0x78b8b75aca40>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate(123) == (8, 13)\nE       assert None == (8, 13)\nE        +  where None = <function even_odd_palindrome at 0x78b8b75aca40>(123)\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert None == (8, 13)\n1 failed in 0.04s"
+}

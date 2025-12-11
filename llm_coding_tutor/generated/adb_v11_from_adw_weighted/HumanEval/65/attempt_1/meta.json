@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:12:07",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                   [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function circular_shift at 0x79ce2b1ed300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate(100, 2) == \"001\"\nE       AssertionError: assert '010' == '001'\nE         \nE         - 001\nE         + 010\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert '010' == '001'\n1 failed in 0.04s"
+}

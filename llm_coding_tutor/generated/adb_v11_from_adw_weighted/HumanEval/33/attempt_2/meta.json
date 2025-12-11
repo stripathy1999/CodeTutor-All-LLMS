@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:07:34",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                   [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function sort_third at 0x7dbf00e75300>\n\n    def check(candidate):\n>       assert tuple(candidate([1, 2, 3])) == tuple(sort_third([1, 2, 3]))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       TypeError: 'NoneType' object is not iterable\n\ntest_solution.py:12: TypeError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - TypeError: 'NoneType' object is not iterable\n1 failed in 0.04s"
+}

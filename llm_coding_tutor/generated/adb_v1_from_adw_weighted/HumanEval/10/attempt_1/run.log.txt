@@ -1,0 +1,17 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import make_palindrome as candidate
+solution.py:23: in <module>
+    print(make_palindrome('cat'))  # Output: 'catac'
+          ^^^^^^^^^^^^^^^^^^^^^^
+solution.py:15: in make_palindrome
+    if is_palindrome(string[i:]):
+       ^^^^^^^^^^^^^
+E   NameError: name 'is_palindrome' is not defined
+------------------------------- Captured stdout --------------------------------
+None
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'is_palindrome' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.12s

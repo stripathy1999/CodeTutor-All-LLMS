@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function eat at 0x7f4ba6ae4a40>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert True, "This prints if this assert fails 1 (good for debugging!)"
+>       assert candidate(5, 6, 10) == [11, 4], "Error"
+E       AssertionError: Error
+E       assert None == [11, 4]
+E        +  where None = <function eat at 0x7f4ba6ae4a40>(5, 6, 10)
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Error
+1 failed in 0.04s

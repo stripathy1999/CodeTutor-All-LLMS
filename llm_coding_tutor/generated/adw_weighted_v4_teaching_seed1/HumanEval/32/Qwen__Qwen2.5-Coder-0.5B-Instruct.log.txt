@@ -1,0 +1,12 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import find_zero as candidate
+solution.py:25: in <module>
+    print(round(find_zero([1, 2]), 2))  # f(x) = 1 + 2x
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: type NoneType doesn't define __round__ method
+=========================== short test summary info ============================
+ERROR test_solution.py - TypeError: type NoneType doesn't define __round__ me...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

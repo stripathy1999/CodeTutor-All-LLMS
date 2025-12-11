@@ -1,0 +1,32 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:16: in check
+    assert candidate('three') == 'three'
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+numbers = 'three'
+
+    def sort_numbers(numbers: str) -> str:
+        """ Input is a space-delimited string of numberals from 'zero' to 'nine'.
+        Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five','six','seven', 'eight' and 'nine'.
+        Return the string with numbers sorted from smallest to largest
+        >>> sort_numbers('three one five')
+        'one three five'
+        """
+        # Convert the input string into a list of integers
+>       numbers = list(map(int, numbers.split()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: invalid literal for int() with base 10: 'three'
+
+solution.py:9: ValueError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - ValueError: invalid literal for int() wit...
+1 failed in 0.04s

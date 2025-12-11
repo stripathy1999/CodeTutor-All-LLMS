@@ -1,0 +1,35 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+nums = [1, 11, -1, -11, -12]
+
+    def order_by_points(nums):
+        """
+        Write a function which sorts the given list of integers
+        in ascending order according to the sum of their digits.
+        Note: if there are several items with similar sum of their digits,
+        order them based on their index in original list.
+    
+        For example:
+        >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+        >>> order_by_points([]) == []
+        """
+>       return sorted(nums, key=sum(int(digit) for digit in str(x)))
+                                                                ^
+E       NameError: name 'x' is not defined
+
+solution.py:12: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'x' is not defined
+1 failed in 0.04s

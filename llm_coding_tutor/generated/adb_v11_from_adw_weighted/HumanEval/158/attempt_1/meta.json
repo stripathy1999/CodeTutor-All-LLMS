@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:04:00",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "______________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function find_max at 0x7c8872e3d1c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert (candidate([\"name\", \"of\", \"string\"]) == \"string\"), \"t1\"\n>       assert (candidate([\"name\", \"enam\", \"game\"]) == \"enam\"), 't2'\nE       AssertionError: t2\nE       assert 'name' == 'enam'\nE         \nE         - enam\nE         ? -\nE         + name\nE         ?    +\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: t2\n1 failed in 0.04s"
+}

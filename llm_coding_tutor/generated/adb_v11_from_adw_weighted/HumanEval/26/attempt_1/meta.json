@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 20:58:06",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "_______________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function remove_duplicates at 0x7cede3964900>\n\n    def check(candidate):\n        assert candidate([]) == []\n        assert candidate([1, 2, 3, 4]) == [1, 2, 3, 4]\n>       assert candidate([1, 2, 3, 2, 4, 3, 5]) == [1, 4, 5]\nE       assert [1, 2, 3, 4, 5] == [1, 4, 5]\nE         \nE         At index 1 diff: 2 != 4\nE         Left contains 2 more items, first extra item: 4\nE         Use -v to get more diff\n\ntest_solution.py:17: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert [1, 2, 3, 4, 5] == [1, 4, 5]\n1 failed in 0.04s"
+}

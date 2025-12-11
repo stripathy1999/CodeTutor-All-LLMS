@@ -1,0 +1,4 @@
+model=Qwen/Qwen2.5-Coder-0.5B-Instruct
+variant=adw_weighted_v4_teaching
+seed=1
+timestamp=2025-12-01 08:43:40

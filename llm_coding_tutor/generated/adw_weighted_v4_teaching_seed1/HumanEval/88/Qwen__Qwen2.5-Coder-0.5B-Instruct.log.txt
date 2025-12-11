@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:11: in check
+    assert candidate([5]) == [5], "Error"
+           ^^^^^^^^^^^^^^
+solution.py:18: in sort_array
+    sorted_array = sorted(array, key=lambda x: (x[0] + x[-1], -x[0]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+x = 5
+
+>   sorted_array = sorted(array, key=lambda x: (x[0] + x[-1], -x[0]))
+                                                ^^^^
+E   TypeError: 'int' object is not subscriptable
+
+solution.py:18: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: 'int' object is not subscriptable
+1 failed in 0.04s

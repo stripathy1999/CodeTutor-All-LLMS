@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:00:53",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function words_in_sentence at 0x78ec64b411c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate(\"This is a test\") == \"is\"\nE       AssertionError: assert 'Thisatest' == 'is'\nE         \nE         - is\nE         + Thisatest\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert 'Thisatest' == 'is'\n1 failed in 0.04s"
+}

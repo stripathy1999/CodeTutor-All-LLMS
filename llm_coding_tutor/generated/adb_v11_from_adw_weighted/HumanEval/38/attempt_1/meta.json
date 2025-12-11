@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:08:11",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "  def test_all():\n>       check(candidate)\n\ntest_solution.py:24: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function decode_cyclic at 0x7f501dd61300>\n\n    def check(candidate):\n        from random import randint, choice\n        import string\n    \n        letters = string.ascii_lowercase\n        for _ in range(100):\n            str = ''.join(choice(letters) for i in range(randint(10, 20)))\n>           encoded_str = encode_cyclic(str)\n                          ^^^^^^^^^^^^^\nE           NameError: name 'encode_cyclic' is not defined\n\ntest_solution.py:18: NameError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - NameError: name 'encode_cyclic' is not de...\n1 failed in 0.04s"
+}

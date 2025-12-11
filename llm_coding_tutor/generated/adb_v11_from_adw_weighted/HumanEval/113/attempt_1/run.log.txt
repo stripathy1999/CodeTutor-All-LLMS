@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function odd_count at 0x7e8f2dd69300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(['1234567']) == ["the number of odd elements 4n the str4ng 4 of the 4nput."], "Test 1"
+E       AssertionError: Test 1
+E       assert ['the number ...f the 1nput.'] == ['the number ...f the 4nput.']
+E         
+E         At index 0 diff: 'the number of odd elements 4n the str1ng 1 of the 1nput.' != 'the number of odd elements 4n the str4ng 4 of the 4nput.'
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 1
+1 failed in 0.04s

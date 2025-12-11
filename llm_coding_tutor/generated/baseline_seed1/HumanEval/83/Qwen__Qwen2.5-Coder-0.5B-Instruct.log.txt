@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function starts_one_ends at 0x7994426651c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert True, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate(1) == 1
+>       assert candidate(2) == 18
+E       assert 171 == 18
+E        +  where 171 = <function starts_one_ends at 0x7994426651c0>(2)
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 171 == 18
+1 failed in 0.04s

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-12-01 10:47:57",
+  "overall_fix_rate_%": 0.0,
+  "per_label_fix_rate": {},
+  "comparison": [
+    {
+      "variant": "adw\u2192adb_v11 (combined)",
+      "tasks": 164,
+      "passed": 93,
+      "pass_rate_%": 56.7
+    },
+    {
+      "variant": "adw\u2192adb_ecnn_v11 (combined)",
+      "tasks": 164,
+      "passed": 49,
+      "pass_rate_%": 29.9
+    }
+  ]
+}

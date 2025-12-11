@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:07:53",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                     [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function sort_even at 0x78b074565300>\n\n    def check(candidate):\n>       assert tuple(candidate([1, 2, 3])) == tuple([1, 2, 3])\nE       assert (0, 2, 1) == (1, 2, 3)\nE         \nE         At index 0 diff: 0 != 1\nE         Use -v to get more diff\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert (0, 2, 1) == (1, 2, 3)\n1 failed in 0.04s"
+}

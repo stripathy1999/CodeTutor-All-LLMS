@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:14:13",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "                  [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function is_multiply_prime at 0x7ebf760111c0>\n\n    def check(candidate):\n    \n        assert candidate(5) == False\n>       assert candidate(30) == True\nE       assert False == True\nE        +  where False = <function is_multiply_prime at 0x7ebf760111c0>(30)\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert False == True\n1 failed in 0.04s"
+}

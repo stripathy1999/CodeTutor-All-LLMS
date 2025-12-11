@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:16:08",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1302,
+  "traceback_tail": "zen importlib._bootstrap>:1387: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1360: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1331: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:935: in _load_unlocked\n    ???\n/usr/local/lib/python3.12/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\ntest_solution.py:5: in <module>\n    from solution import numerical_letter_grade as candidate\nE     File \"/tmp/heval_numerical_letter_grade_a750k_pa/solution.py\", line 32\nE       elif g\nE             ^\nE   SyntaxError: expected ':'\n=========================== short test summary info ============================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.16s"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:16:38",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": " _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function anti_shuffle at 0x7d8932d99300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate('Hi') == 'Hi'\n        assert candidate('hello') == 'ehllo'\n        assert candidate('number') == 'bemnru'\n        assert candidate('abcd') == 'abcd'\n>       assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\nE       AssertionError: assert 'Hello!!!Wdlor' == 'Hello !!!Wdlor'\nE         \nE         - Hello !!!Wdlor\nE         ?      -\nE         + Hello!!!Wdlor\n\ntest_solution.py:13: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert 'Hello!!!Wdlor' ==...\n1 failed in 0.04s"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:07:05",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1202,
+  "traceback_tail": ":1331: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:935: in _load_unlocked\n    ???\n/usr/local/lib/python3.12/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\ntest_solution.py:5: in <module>\n    from solution import find_zero as candidate\nE     File \"/tmp/heval_find_zero_rs150gzc/solution.py\", line 17\nE       def newton_method(coefficients: List[float], x: float) -> float:\nE                                                                       ^\nE   IndentationError: expected an indented block after function definition on line 17\n=========================== short test summary info ============================\nERROR test_solution.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.15s"
+}

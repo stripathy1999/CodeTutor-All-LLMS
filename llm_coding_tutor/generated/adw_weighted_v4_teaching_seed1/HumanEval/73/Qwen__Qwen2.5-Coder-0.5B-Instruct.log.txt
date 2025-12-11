@@ -1,0 +1,23 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function smallest_change at 0x7eb9d9765300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate([1,2,3,5,4,7,9,6]) == 4
+E       assert 8 == 4
+E        +  where 8 = <function smallest_change at 0x7eb9d9765300>([1, 2, 3, 5, 4, 7, ...])
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 8 == 4
+1 failed in 0.04s

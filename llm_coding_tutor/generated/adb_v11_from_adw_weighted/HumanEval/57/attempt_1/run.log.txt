@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function monotonic at 0x7c6d588f1300>
+
+    def check(candidate):
+        assert candidate([1, 2, 4, 10]) == True
+        assert candidate([1, 2, 4, 20]) == True
+        assert candidate([1, 20, 4, 10]) == False
+>       assert candidate([4, 1, 0, -10]) == True
+E       assert False == True
+E        +  where False = <function monotonic at 0x7c6d588f1300>([4, 1, 0, -10])
+
+test_solution.py:15: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert False == True
+1 failed in 0.05s

@@ -1,0 +1,14 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import digits as candidate
+solution.py:41: in <module>
+    check_solution()
+solution.py:36: in check_solution
+    assert digits(4) == 0, "Test case 2 failed"
+           ^^^^^^^^^^^^^^
+E   AssertionError: Test case 2 failed
+=========================== short test summary info ============================
+ERROR test_solution.py - AssertionError: Test case 2 failed
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

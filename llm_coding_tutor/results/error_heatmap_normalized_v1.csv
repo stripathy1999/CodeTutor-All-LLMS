@@ -1,0 +1,8 @@
+variant,assertion_failure,empty_body,logic_constant_output,logic_off_by_one,loop_wrong,print_not_return,recursive_error,runtime_other,signature_changed,syntax_bad_indent,syntax_error,syntax_missing_colon,timeout,type_error,unknown,value_error,wrong_data_type
+adb_v11_from_adw_weighted,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0
+adw_adb_union,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0
+adw_gepn_gate_v3,60.9,0.0,0.0,0.0,0.0,0.0,0.0,18.4,0.0,0.0,13.8,0.0,1.0999999999999999,2.3,0.0,3.4000000000000004,0.0
+adw_weighted_v4_teaching,0.0,0.0,0.0,0.0,0.0,0.0,0.0,32.2,0.0,0.0,0.0,0.0,0.0,0.0,67.80000000000001,0.0,0.0
+baseline,0.0,0.0,0.0,0.0,0.0,0.0,0.0,68.4,0.0,0.0,0.0,0.0,1.0,0.0,30.599999999999998,0.0,0.0
+baseline_primitive,0.0,0.0,0.0,0.0,0.0,0.0,0.0,87.5,0.0,0.0,0.0,0.0,0.0,0.0,12.5,0.0,0.0
+controlled_failures_v1,0.0,10.7,11.0,10.5,6.800000000000001,10.5,10.5,0.0,8.5,11.0,0.0,9.3,0.0,0.0,0.0,0.0,11.200000000000001

@@ -1,0 +1,12 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+test_solution.py:5: in <module>
+    from solution import find_closest_elements as candidate
+solution.py:1: in <module>
+    def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+                                       ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'List' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

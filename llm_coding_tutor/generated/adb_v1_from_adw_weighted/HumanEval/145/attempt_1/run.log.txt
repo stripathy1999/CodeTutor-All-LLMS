@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+solution.py:13: in order_by_points
+    nums.sort(key=lambda x: sum(int(digit) for digit in str(x)))
+solution.py:13: in <lambda>
+    nums.sort(key=lambda x: sum(int(digit) for digit in str(x)))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+.0 = <str_ascii_iterator object at 0x79b99aca7fd0>
+
+>   nums.sort(key=lambda x: sum(int(digit) for digit in str(x)))
+                                ^^^^^^^^^^
+E   ValueError: invalid literal for int() with base 10: '-'
+
+solution.py:13: ValueError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - ValueError: invalid literal for int() wit...
+1 failed in 0.04s

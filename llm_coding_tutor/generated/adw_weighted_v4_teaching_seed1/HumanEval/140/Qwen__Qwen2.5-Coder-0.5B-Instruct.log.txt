@@ -1,0 +1,33 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function fix_spaces at 0x7d455870d300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate("Example") == "Example", "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate("Mudasir Hanif ") == "Mudasir_Hanif_", "This prints if this assert fails 2 (good for debugging!)"
+        assert candidate("Yellow Yellow  Dirty  Fellow") == "Yellow_Yellow__Dirty__Fellow", "This prints if this assert fails 3 (good for debugging!)"
+    
+        # Check some edge cases that are easy to work out by hand.
+>       assert candidate("Exa   mple") == "Exa-mple", "This prints if this assert fails 4 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 4 (good for debugging!)
+E       assert 'Exa___mple' == 'Exa-mple'
+E         
+E         - Exa-mple
+E         ?    ^
+E         + Exa___mple
+E         ?    ^^^
+
+test_solution.py:14: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

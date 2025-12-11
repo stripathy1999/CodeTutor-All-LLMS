@@ -1,0 +1,930 @@
+task_id,model,variant,seed,regime,p_fail,primary_pass,final_pass,adb_calls,ecnn_calls,adb_variant_used,rubric_bullets,gen_latency_ms,pytest_ms_primary,pytest_ms_repair,prompt_chars,prompt_tokens_est,temperature_used,max_new_tokens_used,detail
+HumanEval/0,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9926985408577569,0,0,1,1,ecnn_adb,13,5582,1202,1202,1693.0,226.0,0.30000000000000004,320,"    def has_close_elements(numbers: List[float], threshold: float) -> bool:
+                                    ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'List' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s"
+HumanEval/1,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9948945238689189,0,0,1,1,ecnn_adb,13,8820,1102,1202,1842.0,254.0,0.30000000000000004,320," def separate_paren_groups(paren_string: str) -> List[str]:
+                                                    ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'List' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s"
+HumanEval/10,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.995558082751414,0,0,1,1,ecnn_adb,13,6554,1102,1102,1916.0,259.0,0.30000000000000004,320,"hat is a palindrome
+        for i in range(len(string), 0, -1):
+>           if is_palindrome(string[i:]):
+               ^^^^^^^^^^^^^
+E           NameError: name 'is_palindrome' is not defined
+
+solution.py:18: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'is_palindrome' is not de...
+1 failed in 0.04s"
+HumanEval/100,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9948653949782729,0,0,1,1,ecnn_adb,13,2786,15017,15018,1811.0,264.0,0.30000000000000004,320,TimeoutError: Execution exceeded limit
+HumanEval/101,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9934923688108441,0,0,1,1,ecnn_adb,13,3885,1102,1102,1730.0,239.0,0.30000000000000004,320,"', ... 'is', 'John']
+E         
+E         At index 1 diff: ' my name is John' != 'my'
+E         Right contains 3 more items, first extra item: 'name'
+E         Use -v to get more diff
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert ['Hi', ' my name i...
+1 failed in 0.04s"
+HumanEval/102,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9923100606729617,0,0,1,1,ecnn_adb,13,4999,1101,1202,1652.0,229.0,0.30000000000000004,320,"7e9f2cc9d300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(12, 15) == 14
+E       assert -1 == 14
+E        +  where -1 = <function choose_num at 0x7e9f2cc9d300>(12, 15)
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert -1 == 14
+1 failed in 0.04s"
+HumanEval/103,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9942068825509272,0,0,1,1,ecnn_adb,13,5938,1101,1102,1776.0,249.0,0.30000000000000004,320,"    
+        # Check some simple cases
+>       assert candidate(1, 5) == ""0b11""
+E       AssertionError: assert '0b00000011' == '0b11'
+E         
+E         - 0b11
+E         + 0b00000011
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '0b00000011' == '0...
+1 failed in 0.04s"
+HumanEval/104,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9925086278843448,0,0,1,1,ecnn_adb,13,8041,1102,1102,1674.0,227.0,0.30000000000000004,320,"ndidate([15, 33, 1422, 1]) == [1, 15, 33]
+>       assert candidate([152, 323, 1422, 10]) == []
+E       assert [323] == []
+E         
+E         Left contains one more item: 323
+E         Use -v to get more diff
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [323] == []
+1 failed in 0.04s"
+HumanEval/105,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9975597519741698,0,0,1,1,ecnn_adb,13,8949,1101,1101,2145.0,313.0,0.30000000000000004,320,"], ""Error""
+E       AssertionError: Error
+E       assert None == ['Eight', 'Five', 'Four', 'Three', 'Two', 'Two', ...]
+E        +  where None = <function by_length at 0x7cd4593ad300>([2, 1, 1, 4, 5, 8, ...])
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Error
+1 failed in 0.04s"
+HumanEval/106,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9941913627139651,1,1,0,0,none,13,9027,1102,0,1736.0,263.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/107,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9966265347170724,0,0,1,1,ecnn_adb,13,9017,1202,0,2018.0,285.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'if' statement on line 34 (<unknown>, line 35)"
+HumanEval/108,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9937069245228651,0,0,1,1,ecnn_adb,13,6241,1102,1101,1732.0,246.0,0.30000000000000004,320,"_ _ _ _ 
+
+.0 = <str_ascii_iterator object at 0x7a79571c5f90>
+
+>   if sum(int(digit) for digit in num_str) > 0:
+           ^^^^^^^^^^
+E   ValueError: invalid literal for int() with base 10: '-'
+
+solution.py:20: ValueError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - ValueError: invalid literal for int() wit...
+1 failed in 0.04s"
+HumanEval/109,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9990589799162525,0,0,1,1,ecnn_adb,13,9020,1202,0,2601.0,365.0,0.30000000000000004,320,"SyntaxError: invalid syntax (<unknown>, line 33)"
+HumanEval/11,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9913627140275846,1,1,0,0,none,13,5825,1102,0,1595.0,223.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/110,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9967261367095475,0,0,1,1,ecnn_adb,13,8848,1202,0,2015.0,293.0,0.30000000000000004,320,"SyntaxError: expected ':' (<unknown>, line 25)"
+HumanEval/111,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9949486787093625,0,0,1,1,ecnn_adb,13,8124,1101,1101,1835.0,259.0,0.30000000000000004,320," {'a': 2, 'b': 2}
+E         
+E         Left contains 1 more item:
+E         {' ': 3}
+E         Right contains 2 more items:
+E         {'a': 2, 'b': 2}
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/112,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9960768800731702,0,0,1,1,ecnn_adb,13,3655,1102,1102,1934.0,281.0,0.30000000000000004,320,"te(""abcde"",""ae"") == ('bcd',False)
+E       AssertionError: assert (False, 'bcd') == ('bcd', False)
+E         
+E         At index 0 diff: False != 'bcd'
+E         Use -v to get more diff
+
+test_solution.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert (False, 'bcd') == ...
+1 failed in 0.04s"
+HumanEval/113,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.995974824178129,0,0,1,1,ecnn_adb,13,7454,1102,1101,1926.0,278.0,0.30000000000000004,320," the 4nput.']
+E         
+E         At index 0 diff: 'the number of odd elements 4n the str1ng 1 of the 1nput.' != 'the number of odd elements 4n the str4ng 4 of the 4nput.'
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 1
+1 failed in 0.04s"
+HumanEval/114,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9906872829469827,1,1,0,0,none,13,4451,1102,0,1572.0,214.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/115,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9984505905086782,0,0,1,1,ecnn_adb,13,9005,1202,1202,2392.0,327.0,0.30000000000000004,320,"olution.py:1: in <module>
+    def max_fill(grid: List[List[int]], capacity: int) -> int:
+                       ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'List' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s"
+HumanEval/116,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9946430611008313,0,0,1,1,ecnn_adb,13,8773,1102,1101,1798.0,259.0,0.30000000000000004,320," _ _ _ _ _ _ _ 
+
+x = 1
+
+>   sorted_arr = sorted(arr, key=lambda x: (ones_count[x], x))
+                                            ^^^^^^^^^^^^^
+E   TypeError: 'set' object is not subscriptable
+
+solution.py:15: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: 'set' object is not subscriptable
+1 failed in 0.04s"
+HumanEval/117,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9967319673459263,0,0,1,1,ecnn_adb,13,8816,1101,1102,2038.0,285.0,0.30000000000000004,320,"le lamb"", 4))
+E       AssertionError: First test error: None
+E       assert None == ['little']
+E        +  where None = <function select_words at 0x7f0633391300>('Mary had a little lamb', 4)
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: First test error: None
+1 failed in 0.04s"
+HumanEval/118,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9954151617905875,0,0,1,1,ecnn_adb,13,3837,1101,1102,1907.0,255.0,0.30000000000000004,320,"wel at 0x7805c6809300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(""yogurt"") == ""u""
+E       AssertionError: assert '' == 'u'
+E         
+E         - u
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '' == 'u'
+1 failed in 0.04s"
+HumanEval/119,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9963678935020674,0,0,1,1,ecnn_adb,13,7641,1102,1101,1977.0,283.0,0.30000000000000004,320," check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(['()(', ')']) == 'Yes'
+E       AssertionError: assert 'No' == 'Yes'
+E         
+E         - Yes
+E         + No
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'No' == 'Yes'
+1 failed in 0.04s"
+HumanEval/12,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9931864985796446,1,1,0,0,none,13,4180,1102,0,1712.0,235.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/120,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9963515283257286,0,0,1,1,ecnn_adb,13,7241,1102,1102,1955.0,290.0,0.30000000000000004,320,"some simple cases
+>       assert candidate([-3, -4, 5], 3) == [-4, -3, 5]
+E       assert [5, -3, -4] == [-4, -3, 5]
+E         
+E         At index 0 diff: 5 != -4
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [5, -3, -4] == [-4, -3, 5]
+1 failed in 0.04s"
+HumanEval/121,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.991434593004635,1,1,0,0,none,13,5574,1102,0,1603.0,222.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/122,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9935148812682489,0,0,1,1,ecnn_adb,13,6385,1102,1101,1724.0,242.0,0.30000000000000004,320,"[1,-2,-3,41,57,76,87,88,99], 3) == -4
+>       assert candidate([111,121,3,4000,5,6], 2) == 0
+E       assert 232 == 0
+E        +  where 232 = <function add_elements at 0x785b5c4d5300>([111, 121, 3, 4000, 5, 6], 2)
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 232 == 0
+1 failed in 0.04s"
+HumanEval/123,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9977772971631501,0,0,1,1,ecnn_adb,13,8769,1101,1101,2179.0,322.0,0.30000000000000004,320,"ert candidate(14) == [1, 5, 7, 11, 13, 17]
+E       assert [3, 7, 15, 21, 31, 43] == [1, 5, 7, 11, 13, 17]
+E         
+E         At index 0 diff: 3 != 1
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [3, 7, 15, 21, 31, 43] == [1, 5, 7...
+1 failed in 0.04s"
+HumanEval/124,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9977569931152299,1,1,0,0,none,13,8143,1102,0,2187.0,317.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/125,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9947222608565749,0,0,1,1,ecnn_adb,13,8129,1101,1102,1832.0,250.0,0.30000000000000004,320,"""Hello"",""world!""]
+E       AssertionError: assert [] == ['Hello', 'world!']
+E         
+E         Right contains 2 more items, first extra item: 'Hello'
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert [] == ['Hello', 'w...
+1 failed in 0.04s"
+HumanEval/126,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9959020776685304,0,0,1,1,ecnn_adb,13,1393,1102,1102,1912.0,279.0,0.30000000000000004,320,"sertionError: This prints if this assert fails 5 (good for debugging!)
+E       assert True == False
+E        +  where True = <function is_sorted at 0x784c91f55300>([1, 2, 2, 2, 3, 4])
+
+test_solution.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/127,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9980608352852096,0,0,1,1,ecnn_adb,13,8971,1101,1101,2262.0,323.0,0.30000000000000004,320,"some simple cases
+>       assert candidate((1, 2), (2, 3)) == ""NO""
+E       AssertionError: assert None == 'NO'
+E        +  where None = <function intersection at 0x7f1f2e3b9300>((1, 2), (2, 3))
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert None == 'NO'
+1 failed in 0.04s"
+HumanEval/128,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9935324706655789,1,1,0,0,none,13,5428,1102,0,1723.0,243.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/129,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9993914576786667,0,0,1,1,ecnn_adb,13,8936,1202,0,2702.0,428.0,0.30000000000000004,320,"SyntaxError: unterminated triple-quoted string literal (detected at line 23) (<unknown>, line 2)"
+HumanEval/13,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.990151262223129,1,1,0,0,none,13,2633,1102,0,1553.0,208.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/130,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9968881192446766,0,0,1,1,ecnn_adb,13,8653,1101,1102,2014.0,305.0,0.30000000000000004,320," assert [3, 3, 3, 3, 3, 3] == [1, 3, 2.0, 8.0]
+E         
+E         At index 0 diff: 3 != 1
+E         Left contains 2 more items, first extra item: 3
+E         Use -v to get more diff
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [3, 3, 3, 3, 3, 3] == [1, 3, 2.0, ...
+1 failed in 0.04s"
+HumanEval/131,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9903011977982397,1,1,0,0,none,13,8650,1101,0,1549.0,213.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/132,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9943526712158456,0,0,1,1,ecnn_adb,13,5158,1102,1102,1814.0,241.0,0.30000000000000004,320,"idate('[]]]]]]][[[[[]') == False
+>       assert candidate('[][]') == False
+E       AssertionError: assert True == False
+E        +  where True = <function is_nested at 0x7cdcc8af5300>('[][]')
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert True == False
+1 failed in 0.04s"
+HumanEval/133,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9947085218285473,0,0,1,1,ecnn_adb,13,9049,1202,1101,1803.0,260.0,0.30000000000000004,320,"E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert 17 == 29
+E        +  where 17 = <function sum_squares at 0x782caf2f11c0>([1.4, 4.2, 0])
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/134,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9947396395652779,0,0,1,1,ecnn_adb,13,7864,1101,1102,1856.0,242.0,0.30000000000000004,320,"mple cases
+>       assert candidate(""apple"") == False
+E       AssertionError: assert True == False
+E        +  where True = <function check_if_last_char_is_a_letter at 0x78fda79793a0>('apple')
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert True == False
+1 failed in 0.04s"
+HumanEval/135,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9928700840000199,0,0,1,1,ecnn_adb,13,6449,1102,1102,1697.0,230.0,0.30000000000000004,320,"e9300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate([1,2,4,3,5])==3
+E       assert 4 == 3
+E        +  where 4 = <function can_arrange at 0x79ff363e9300>([1, 2, 4, 3, 5])
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 4 == 3
+1 failed in 0.04s"
+HumanEval/136,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9942599500455914,0,0,1,1,ecnn_adb,13,6192,1101,1101,1801.0,242.0,0.30000000000000004,320," some simple cases
+>       assert candidate([2, 4, 1, 3, 5, 7]) == (None, 1)
+E       assert (-inf, 1) == (None, 1)
+E         
+E         At index 0 diff: -inf != None
+E         Use -v to get more diff
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert (-inf, 1) == (None, 1)
+1 failed in 0.04s"
+HumanEval/137,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9943093297201693,0,0,1,1,ecnn_adb,13,7503,1101,1101,1790.0,248.0,0.30000000000000004,320,"e:
+                return None
+        elif isinstance(a, (int, float)):
+>           if a > b:
+               ^^^^^
+E           TypeError: '>' not supported between instances of 'int' and 'str'
+
+solution.py:24: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: '>' not supported between inst...
+1 failed in 0.04s"
+HumanEval/138,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9909742811676565,0,0,1,1,ecnn_adb,13,8928,1201,1102,1600.0,211.0,0.30000000000000004,320,"ert candidate(6) == False
+        assert candidate(8) == True
+>       assert candidate(10) == True
+E       assert False == True
+E        +  where False = <function is_equal_to_sum_even at 0x7952dc591300>(10)
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert False == True
+1 failed in 0.04s"
+HumanEval/139,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9923196348447076,0,0,1,1,ecnn_adb,13,4144,1102,1102,1661.0,226.0,0.30000000000000004,320,"esult = 1
+        for i in range(1, n + 1):
+>           result *= math.factorial(i)
+                      ^^^^
+E           NameError: name 'math' is not defined. Did you forget to import 'math'
+
+solution.py:18: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'math' is not defined. Di...
+1 failed in 0.04s"
+HumanEval/14,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9900850422334866,0,0,1,1,ecnn_adb,13,2146,1102,1202,1546.0,209.0,0.30000000000000004,320,"solution.py:1: in <module>
+    def all_prefixes(string: str) -> List[str]:
+                                     ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'List' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s"
+HumanEval/140,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9931820636250475,0,0,1,1,ecnn_adb,13,3965,1102,1102,1728.0,229.0,0.30000000000000004,320," debugging!)
+E       assert 'Mudasir Hanif ' == 'Mudasir_Hanif_'
+E         
+E         - Mudasir_Hanif_
+E         ?        ^     ^
+E         + Mudasir Hanif 
+E         ?        ^     ^
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/141,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9974461369766686,0,0,1,1,ecnn_adb,13,9004,1202,0,2141.0,304.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'if' statement on line 28 (<unknown>, line 28)"
+HumanEval/142,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9963092665565794,0,0,1,1,ecnn_adb,13,8991,1101,1101,1945.0,291.0,0.30000000000000004,320,"cf91440>
+
+    def check(candidate):
+    
+        # Check some simple cases
+    
+>       assert candidate([1,2,3]) == 6
+E       assert 1 == 6
+E        +  where 1 = <function sum_squares at 0x78e08cf91440>([1, 2, 3])
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 1 == 6
+1 failed in 0.04s"
+HumanEval/143,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9961762730282502,0,0,1,1,ecnn_adb,13,9007,1202,0,1972.0,273.0,0.30000000000000004,320,"SyntaxError: '(' was never closed (<unknown>, line 43)"
+HumanEval/144,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9957871289640995,0,0,1,1,ecnn_adb,13,8960,1102,1102,1922.0,269.0,0.30000000000000004,320,"merator and the denominator by their greatest common divisor
+>       gcd = math.gcd(num, denom)
+              ^^^^
+E       NameError: name 'math' is not defined. Did you forget to import 'math'
+
+solution.py:26: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'math' is not defined. Di...
+1 failed in 0.04s"
+HumanEval/145,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9938038243340191,0,0,1,1,ecnn_adb,13,6959,1102,1102,1750.0,243.0,0.30000000000000004,320," custom key
+>       sorted_nums = sorted(nums, key=sum(int(digit) for digit in str(x)))
+                                                                       ^
+E       NameError: name 'x' is not defined
+
+solution.py:16: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'x' is not defined
+1 failed in 0.04s"
+HumanEval/146,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9931614486589359,0,0,1,1,ecnn_adb,13,5659,1101,1102,1696.0,240.0,0.30000000000000004,320,"  assert candidate([15, -73, 14, -15]) == 1
+>       assert candidate([33, -2, -3, 45, 21, 109]) == 2
+E       assert 1 == 2
+E        +  where 1 = <function specialFilter at 0x78fa135a93a0>([33, -2, -3, 45, 21, 109])
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 1 == 2
+1 failed in 0.04s"
+HumanEval/147,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9950701332084171,0,0,1,1,ecnn_adb,13,8568,1102,1102,1812.0,273.0,0.30000000000000004,320,"
+
+candidate = <function get_max_triples at 0x7d57f88bd1c0>
+
+    def check(candidate):
+    
+>       assert candidate(5) == 1
+E       assert 4 == 1
+E        +  where 4 = <function get_max_triples at 0x7d57f88bd1c0>(5)
+
+test_solution.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 4 == 1
+1 failed in 0.04s"
+HumanEval/148,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9971404754613262,0,0,1,1,ecnn_adb,13,9008,1202,0,2111.0,289.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'if' statement on line 25 (<unknown>, line 25)"
+HumanEval/149,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9973254826441701,1,1,0,0,none,13,7189,1102,0,2112.0,304.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/15,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9903171053706795,0,0,1,1,ecnn_adb,13,4776,1101,1101,1561.0,209.0,0.30000000000000004,320,"andidate):
+        assert candidate(0) == '0'
+>       assert candidate(3) == '0 1 2 3'
+E       AssertionError: assert '0123' == '0 1 2 3'
+E         
+E         - 0 1 2 3
+E         + 0123
+
+test_solution.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '0123' == '0 1 2 3'
+1 failed in 0.04s"
+HumanEval/150,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9911033914312308,1,1,0,0,none,13,5792,1101,0,1579.0,222.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/151,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9940890411944905,0,0,1,1,ecnn_adb,13,4538,1102,1102,1777.0,244.0,0.30000000000000004,320,"sertionError: This prints if this assert fails 5 (also good for debugging!)
+E       assert 1 == 0
+E        +  where 1 = <function double_the_difference at 0x7d4e0d50d300>([-1, -2, 8])
+
+test_solution.py:16: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/152,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9973087928034126,1,1,0,0,none,13,8740,1102,0,2130.0,296.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/153,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9985043096724238,1,1,0,0,none,13,5532,1102,0,2395.0,334.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/154,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9934442013453352,0,0,1,1,ecnn_adb,13,6947,1102,1101,1761.0,226.0,0.30000000000000004,320,"     assert  candidate(""xyzw"",""xyw"") == False , ""test #0""
+E       AssertionError: test #0
+E       assert True == False
+E        +  where True = <function cycpattern_check at 0x7c26c8661300>('xyzw', 'xyw')
+
+test_solution.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: test #0
+1 failed in 0.04s"
+HumanEval/155,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9902600080264562,1,1,0,0,none,13,8189,1102,0,1560.0,208.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/156,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9922444876627823,1,1,0,0,none,13,7278,1102,0,1674.0,219.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/157,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9929979763350779,1,1,0,0,none,13,7680,1102,0,1703.0,232.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/158,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9941477391897188,0,0,1,1,ecnn_adb,13,4962,1102,1101,1797.0,239.0,0.30000000000000004,320,"s = 0
+        max_word = """"
+    
+        for word in words:
+>           unique_chars = len(Counter(word))
+                               ^^^^^^^
+E           NameError: name 'Counter' is not defined
+
+solution.py:15: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'Counter' is not defined
+1 failed in 0.04s"
+HumanEval/159,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9983800472741425,0,0,1,1,ecnn_adb,13,9026,1102,1102,2323.0,342.0,0.30000000000000004,320,"(good for debugging!)""
+>       assert candidate(5, 6, 10) == [11, 4], ""Error""
+E       AssertionError: Error
+E       assert None == [11, 4]
+E        +  where None = <function eat at 0x7c0afa6b1300>(5, 6, 10)
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Error
+1 failed in 0.04s"
+HumanEval/16,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9908666727126333,1,1,0,0,none,13,5143,1101,0,1598.0,209.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/160,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9975629050265679,0,0,1,1,ecnn_adb,13,8907,1202,0,2154.0,310.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'if' statement on line 42 (<unknown>, line 42)"
+HumanEval/161,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9931185842058926,1,1,0,0,none,13,4895,1102,0,1703.0,236.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/162,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9903746052102065,1,1,0,0,none,13,3050,1102,0,1573.0,206.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/163,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9914958934976648,0,0,1,1,ecnn_adb,13,6562,1102,1102,1613.0,220.0,0.30000000000000004,320,"ate(10, 2) == [2, 4, 6, 8], ""Test 2""
+E       AssertionError: Test 2
+E       assert [] == [2, 4, 6, 8]
+E         
+E         Right contains 4 more items, first extra item: 2
+E         Use -v to get more diff
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 2
+1 failed in 0.04s"
+HumanEval/17,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9955353776400774,0,0,1,1,ecnn_adb,13,9058,1202,0,1869.0,275.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'elif' statement on line 31 (<unknown>, line 32)"
+HumanEval/18,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9916621372852408,1,1,0,0,none,13,6158,1102,0,1631.0,218.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/19,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9932381353286639,0,0,1,1,ecnn_adb,13,5013,1102,1102,1725.0,232.0,0.30000000000000004,320,"
+        # Convert the split numbers to integers
+>       numbers = [int(num) for num in numbers]
+                   ^^^^^^^^
+E       ValueError: invalid literal for int() with base 10: 'three'
+
+solution.py:12: ValueError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - ValueError: invalid literal for int() wit...
+1 failed in 0.04s"
+HumanEval/2,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9923589580477381,1,1,0,0,none,13,4601,1102,0,1667.0,225.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/20,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9941612425045792,1,1,0,0,none,13,6694,1102,0,1793.0,241.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/21,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9925256072495008,1,1,0,0,none,13,8387,1102,0,1670.0,229.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/22,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9912190476995887,1,1,0,0,none,13,2947,1102,0,1601.0,217.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/23,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.989118800081647,1,1,0,0,none,13,1369,1102,0,1509.0,201.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/24,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9896288090213521,1,1,0,0,none,13,3308,1102,0,1523.0,207.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/25,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9942933358353528,1,1,0,0,none,13,5003,1102,0,1791.0,247.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/26,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.991946061920748,1,1,0,0,none,13,3994,1102,0,1631.0,226.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/27,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9898194422913238,1,1,0,0,none,13,1947,1102,0,1532.0,208.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/28,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9897673028500676,0,0,1,1,ecnn_adb,13,1624,1202,1202,1537.0,205.0,0.30000000000000004,320,"ndidate
+solution.py:1: in <module>
+    def concatenate(strings: List[str]) -> str:
+                             ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR test_solution.py - NameError: name 'List' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s"
+HumanEval/29,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9919532276190841,1,1,0,0,none,13,2796,1101,0,1648.0,220.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/3,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9943087884165323,1,1,0,0,none,13,3170,1102,0,1790.0,248.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/30,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9904409254192641,1,1,0,0,none,13,3720,1101,0,1550.0,216.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/31,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9916854740983302,1,1,0,0,none,13,5540,1102,0,1641.0,215.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/32,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9975314940736518,0,0,1,1,ecnn_adb,13,8686,1102,1202,2135.0,314.0,0.30000000000000004,320,"^^^^^^^^^^
+test_solution.py:5: in <module>
+    from solution import find_zero as candidate
+E   ImportError: cannot import name 'find_zero' from 'solution' (/tmp/heval_find_zero_jbosnx38/solution.py)
+=========================== short test summary info ============================
+ERROR test_solution.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s"
+HumanEval/33,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9942790703075677,0,0,1,1,ecnn_adb,13,7248,1102,1102,1762.0,257.0,0.30000000000000004,320,">       assert tuple(candidate([1, 2, 3])) == tuple(sort_third([1, 2, 3]))
+                                                    ^^^^^^^^^^
+E       NameError: name 'sort_third' is not defined
+
+test_solution.py:12: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'sort_third' is not defined
+1 failed in 0.04s"
+HumanEval/34,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9889879523829721,1,1,0,0,none,13,2513,1102,0,1485.0,207.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/35,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9896941459055666,1,1,0,0,none,13,3738,1102,0,1527.0,207.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/36,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9902011779443552,1,1,0,0,none,13,3665,1102,0,1548.0,211.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.02s"
+HumanEval/37,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9930138696077233,0,0,1,1,ecnn_adb,13,6344,1102,1102,1677.0,242.0,0.30000000000000004,320," check(candidate):
+>       assert tuple(candidate([1, 2, 3])) == tuple([1, 2, 3])
+E       assert (3, 1, 1) == (1, 2, 3)
+E         
+E         At index 0 diff: 3 != 1
+E         Use -v to get more diff
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert (3, 1, 1) == (1, 2, 3)
+1 failed in 0.04s"
+HumanEval/38,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9956205217579217,0,0,1,1,ecnn_adb,13,8283,1102,1102,1903.0,267.0,0.30000000000000004,320,"ce(letters) for i in range(randint(10, 20)))
+>           encoded_str = encode_cyclic(str)
+                          ^^^^^^^^^^^^^
+E           NameError: name 'encode_cyclic' is not defined
+
+test_solution.py:18: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'encode_cyclic' is not de...
+1 failed in 0.04s"
+HumanEval/39,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9909953446576621,0,0,1,1,ecnn_adb,13,5842,1102,1202,1596.0,213.0,0.30000000000000004,320,"ext = fib1 + fib2
+    
+            # Check if the current Fibonacci number is prime
+>           if is_prime(fib_next):
+               ^^^^^^^^
+E           NameError: name 'is_prime' is not defined
+
+solution.py:24: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'is_prime' is not defined
+1 failed in 0.04s"
+HumanEval/4,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9938794897120803,1,1,0,0,none,13,7181,1102,0,1766.0,240.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/40,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.994458627886016,1,1,0,0,none,13,8551,1102,0,1826.0,241.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/41,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9963257328657726,0,0,1,1,ecnn_adb,13,9095,1202,1101,1967.0,284.0,0.30000000000000004,320,"candidate = <function car_race_collision at 0x7a2d1bd85300>
+
+    def check(candidate):
+>       assert candidate(2) == 4
+E       assert 0 == 4
+E        +  where 0 = <function car_race_collision at 0x7a2d1bd85300>(2)
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 0 == 4
+1 failed in 0.04s"
+HumanEval/42,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9904522171795801,0,1,1,1,ecnn_adb,13,6952,1202,1102,1548.0,217.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/43,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9942070658832672,1,1,0,0,none,13,5282,1102,0,1798.0,241.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/44,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9918060481226878,1,1,0,0,none,13,4611,1102,0,1642.0,218.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/45,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9880024524711999,0,0,1,1,ecnn_adb,13,5217,1202,1101,1458.0,197.0,0.30000000000000004,320,"       raise ValueError(""Side lengths must be positive."")
+    
+        # Calculate the area using Heron's formula
+>       s = (a + b + h) / 2
+                 ^
+E       NameError: name 'b' is not defined
+
+solution.py:10: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'b' is not defined
+1 failed in 0.04s"
+HumanEval/46,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9943249102697664,1,1,0,0,none,13,8975,1102,0,1789.0,249.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/47,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9893680712303928,1,1,0,0,none,13,5875,1203,0,1510.0,206.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.08s"
+HumanEval/48,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9900232327628222,1,1,0,0,none,13,5140,1102,0,1564.0,201.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/49,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9904490825794752,0,0,1,1,ecnn_adb,13,4929,1102,1102,1556.0,214.0,0.30000000000000004,320,"_ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function modp at 0x7f50a6a19300>
+
+    def check(candidate):
+>       assert candidate(3, 5) == 3
+E       assert 4 == 3
+E        +  where 4 = <function modp at 0x7f50a6a19300>(3, 5)
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 4 == 3
+1 failed in 0.05s"
+HumanEval/5,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9916287919457639,1,1,0,0,none,13,4035,1102,0,1623.0,220.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/50,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9924882930442093,0,0,1,1,ecnn_adb,13,3483,1102,1102,1675.0,226.0,0.30000000000000004,320,"hoice(letters) for i in range(randint(10, 20)))
+>           encoded_str = encode_shift(str)
+                          ^^^^^^^^^^^^
+E           NameError: name 'encode_shift' is not defined
+
+test_solution.py:19: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'encode_shift' is not def...
+1 failed in 0.04s"
+HumanEval/51,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9926075084113473,1,1,0,0,none,13,7290,1102,0,1718.0,214.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/52,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9905317699860754,1,1,0,0,none,13,2736,1102,0,1567.0,212.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/53,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.987559425192594,1,1,0,0,none,13,1767,1102,0,1435.0,197.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/54,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.993263113646691,1,1,0,0,none,13,6713,1102,0,1763.0,219.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/55,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9890199846012101,1,1,0,0,none,13,5525,1102,0,1506.0,200.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/56,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9924800291274433,0,0,1,1,ecnn_adb,13,7954,1102,1102,1699.0,217.0,0.30000000000000004,320,"<>>>>"")
+        assert not candidate(""><<>"")
+>       assert not candidate(""<"")
+E       AssertionError: assert not True
+E        +  where True = <function correct_bracketing at 0x7ff3dc87d300>('<')
+
+test_solution.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert not True
+1 failed in 0.04s"
+HumanEval/57,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9907096496237965,1,1,0,0,none,13,6075,1101,0,1579.0,212.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/58,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.990983054536441,1,1,0,0,none,13,7318,1102,0,1576.0,220.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/59,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9894983038344334,0,0,1,1,ecnn_adb,13,5969,1102,1101,1526.0,203.0,0.30000000000000004,320,"or at 0x7c9251101300>
+
+    def check(candidate):
+        assert candidate(15) == 5
+>       assert candidate(27) == 3
+E       assert 1 == 3
+E        +  where 1 = <function largest_prime_factor at 0x7c9251101300>(27)
+
+test_solution.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 1 == 3
+1 failed in 0.04s"
+HumanEval/6,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9939637888709985,1,1,0,0,none,13,6134,1101,0,1772.0,241.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/60,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9905433974315043,1,1,0,0,none,13,3696,1101,0,1576.0,209.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/61,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9919638520493909,1,1,0,0,none,13,3893,1101,0,1668.0,213.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/62,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9918145457624385,1,1,0,0,none,13,6205,1101,0,1618.0,227.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/63,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9943027904484016,1,1,0,0,none,13,7807,1102,0,1803.0,243.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/64,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9942067331475287,0,0,1,1,ecnn_adb,13,8036,1102,1101,1776.0,249.0,0.30000000000000004,320," candidate(""Alone"") == 3, ""Test 2""
+>       assert candidate(""key"") == 2, ""Test 3""
+E       AssertionError: Test 3
+E       assert 1 == 2
+E        +  where 1 = <function vowels_count at 0x7f492bbdd300>('key')
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 3
+1 failed in 0.04s"
+HumanEval/65,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9918187314571426,0,0,1,1,ecnn_adb,13,6032,1102,1102,1632.0,222.0,0.30000000000000004,320," candidate(100, 2) == ""001""
+        assert candidate(12, 2) == ""12""
+>       assert candidate(97, 8) == ""79""
+E       AssertionError: assert '97' == '79'
+E         
+E         - 79
+E         + 97
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '97' == '79'
+1 failed in 0.04s"
+HumanEval/66,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9926728623917483,1,1,0,0,none,13,3826,1102,0,1699.0,223.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/67,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.997354774379064,0,1,1,1,ecnn_adb,13,9136,1202,1102,2108.0,308.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/68,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9988757290252938,0,0,1,1,ecnn_adb,13,9018,1102,1102,2503.0,360.0,0.30000000000000004,320,"(good for debugging!)""
+>       assert candidate([4,2,3]) == [2, 1], ""Error""
+E       AssertionError: Error
+E       assert None == [2, 1]
+E        +  where None = <function pluck at 0x7d37ad905300>([4, 2, 3])
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Error
+1 failed in 0.04s"
+HumanEval/69,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9950586946463912,1,1,0,0,none,13,4711,1102,0,1827.0,267.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.02s"
+HumanEval/7,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9921855838625577,1,1,0,0,none,13,3020,1102,0,1672.0,218.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/70,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9930504485970669,1,1,0,0,none,13,4765,1101,0,1705.0,233.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/71,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9939460050280046,1,1,0,0,none,13,5356,1102,0,1751.0,248.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/72,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.997233463103703,0,0,1,1,ecnn_adb,13,8622,1102,1101,2099.0,301.0,0.30000000000000004,320,"ple cases
+        assert candidate([3, 2, 3], 9) is True
+>       assert candidate([1, 2], 5) is False
+E       assert True is False
+E        +  where True = <function will_it_fly at 0x787f6e5e9300>([1, 2], 5)
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert True is False
+1 failed in 0.04s"
+HumanEval/73,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9945878717351125,1,1,0,0,none,13,8703,1102,0,1808.0,253.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/74,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9959675496392912,0,0,1,1,ecnn_adb,13,9132,1102,1102,1955.0,267.0,0.30000000000000004,320,"_chars_second_list:
+            return lst1
+        elif total_chars_second_list < total_chars_first_list:
+>           return lst
+                   ^^^
+E           NameError: name 'lst' is not defined
+
+solution.py:29: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'lst' is not defined
+1 failed in 0.04s"
+HumanEval/75,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9914246553015563,0,0,1,1,ecnn_adb,13,5922,1102,1102,1605.0,221.0,0.30000000000000004,320,"  def check(candidate):
+    
+        assert candidate(5) == False
+>       assert candidate(30) == True
+E       assert False == True
+E        +  where False = <function is_multiply_prime at 0x7d366203d300>(30)
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert False == True
+1 failed in 0.04s"
+HumanEval/76,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9939466946037083,1,1,0,0,none,13,7792,1102,0,1762.0,244.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/77,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9929759346656614,0,0,1,1,ecnn_adb,13,4038,1102,1102,1701.0,232.0,0.30000000000000004,320,"ue, ""Third test error: "" + str(candidate(-1))
+E       AssertionError: Third test error: False
+E       assert False == True
+E        +  where False = <function iscube at 0x7a986f661300>(-1)
+
+test_solution.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Third test error: False
+1 failed in 0.04s"
+HumanEval/78,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9982409500436766,0,0,1,1,ecnn_adb,13,9061,1102,1102,2263.0,345.0,0.30000000000000004,320," == 1, ""First test error: "" + str(candidate(""AB""))
+E       AssertionError: First test error: None
+E       assert None == 1
+E        +  where None = <function hex_key at 0x7adfcd051300>('AB')
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: First test error: None
+1 failed in 0.04s"
+HumanEval/79,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.995493756602592,1,1,0,0,none,13,3864,1102,0,1896.0,263.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/8,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9933823700468006,1,1,0,0,none,13,4364,1102,0,1714.0,241.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/80,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9931620935521916,0,0,1,1,ecnn_adb,13,4976,1101,1101,1707.0,236.0,0.30000000000000004,320,"candidate(""adb"") == True , ""adb""
+>       assert candidate(""xyy"") == False , ""xyy""
+E       AssertionError: xyy
+E       assert True == False
+E        +  where True = <function is_happy at 0x7f43cd8b9300>('xyy')
+
+test_solution.py:14: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: xyy
+1 failed in 0.04s"
+HumanEval/81,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9982518899888007,0,0,1,1,ecnn_adb,13,9158,1202,0,2371.0,307.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'elif' statement on line 31 (<unknown>, line 31)"
+HumanEval/82,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9918610482442655,1,1,0,0,none,13,4022,1102,0,1649.0,217.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/83,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.989208279461341,1,1,0,0,none,13,3489,1102,0,1506.0,204.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/84,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9946368141430905,1,1,0,0,none,13,8861,1102,0,1800.0,258.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/85,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.989181698101379,1,1,0,0,none,13,4416,1102,0,1499.0,206.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/86,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9955723062433415,0,0,1,1,ecnn_adb,13,8033,1102,1102,1918.0,259.0,0.30000000000000004,320,"lo World!!!') == 'Hello !!!Wdlor'
+E       AssertionError: assert 'Hello!!!Wdlor' == 'Hello !!!Wdlor'
+E         
+E         - Hello !!!Wdlor
+E         ?      -
+E         + Hello!!!Wdlor
+
+test_solution.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'Hello!!!Wdlor' ==...
+1 failed in 0.04s"
+HumanEval/87,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9971445933607008,0,0,1,1,ecnn_adb,13,9074,1202,0,2090.0,297.0,0.30000000000000004,320,"SyntaxError: expected an indented block after 'for' statement on line 31 (<unknown>, line 31)"
+HumanEval/88,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9959680166808806,1,1,0,0,none,13,8979,1102,0,1914.0,282.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/89,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9939065208801174,0,0,1,1,ecnn_adb,13,7450,1102,1102,1777.0,237.0,0.30000000000000004,320,"ert fails 1 (good for debugging!)""
+E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert 'LM' == 'lm'
+E         
+E         - lm
+E         + LM
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/9,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9918916366793796,1,1,0,0,none,13,3291,1102,0,1624.0,227.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/90,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9929980497596967,1,1,0,0,none,13,5502,1102,0,1703.0,232.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/91,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9930283886538582,0,0,1,1,ecnn_adb,13,5809,1102,1102,1692.0,237.0,0.30000000000000004,320," 0, ""Test 1""
+>       assert candidate(""Is the sky blue?"") == 0, ""Test 2""
+E       AssertionError: Test 2
+E       assert 1 == 0
+E        +  where 1 = <function is_bored at 0x783b3f229300>('Is the sky blue?')
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 2
+1 failed in 0.04s"
+HumanEval/92,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9934657886773313,1,1,0,0,none,13,7116,1101,0,1722.0,241.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/93,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9937918779107753,0,0,1,1,ecnn_adb,13,8998,1102,1102,1757.0,240.0,0.30000000000000004,320,"g!)""
+E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert None == 'tgst'
+E        +  where None = <function encode at 0x789dccf61300>('TEST')
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s"
+HumanEval/94,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9957696805580404,0,0,1,1,ecnn_adb,13,9122,1202,0,1944.0,260.0,0.30000000000000004,320,"SyntaxError: unterminated triple-quoted string literal (detected at line 11) (<unknown>, line 2)"
+HumanEval/95,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9959141178465014,0,0,1,1,ecnn_adb,13,7789,1102,1102,1996.0,249.0,0.30000000000000004,320,".0 = <set_iterator object at 0x79256c68f6c0>
+
+>   all_lower = all(key.islower() for key in keys)
+                    ^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'islower'
+
+solution.py:17: AttributeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AttributeError: 'int' object has no attri...
+1 failed in 0.05s"
+HumanEval/96,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9931957105515797,0,0,1,1,ecnn_adb,13,4874,1101,1102,1732.0,228.0,0.30000000000000004,320,"c50e67253a0>
+
+    def check(candidate):
+    
+>       assert candidate(5) == [2,3]
+E       assert [2, 3, 5] == [2, 3]
+E         
+E         Left contains one more item: 5
+E         Use -v to get more diff
+
+test_solution.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert [2, 3, 5] == [2, 3]
+1 failed in 0.04s"
+HumanEval/97,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.9925383736685246,1,1,0,0,none,13,6912,1102,0,1682.0,225.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/98,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.990581118566018,1,1,0,0,none,13,7124,1102,0,1584.0,207.0,0.30000000000000004,320,".                                                                        [100%]
+1 passed in 0.01s"
+HumanEval/99,Qwen/Qwen2.5-Coder-0.5B-Instruct,adw_gepn_gate_v3,1,heavy,0.995695129211049,0,0,1,1,ecnn_adb,13,9045,1102,1102,1933.0,260.0,0.30000000000000004,320,"ate(""10"") == 10, ""Test 1""
+>       assert candidate(""14.5"") == 15, ""Test 2""
+E       AssertionError: Test 2
+E       assert 14 == 15
+E        +  where 14 = <function closest_integer at 0x7de7aef3d300>('14.5')
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: Test 2
+1 failed in 0.04s"

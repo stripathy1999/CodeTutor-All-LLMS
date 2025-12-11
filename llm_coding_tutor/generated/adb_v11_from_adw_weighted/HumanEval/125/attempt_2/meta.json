@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:55:39",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function split_words at 0x790dd90751c0>\n\n    def check(candidate):\n    \n        assert candidate(\"Hello world!\") == [\"Hello\",\"world!\"]\n        assert candidate(\"Hello,world!\") == [\"Hello\",\"world!\"]\n>       assert candidate(\"Hello world,!\") == [\"Hello\",\"world,!\"]\nE       AssertionError: assert ['Hello world'] == ['Hello', 'world,!']\nE         \nE         At index 0 diff: 'Hello world' != 'Hello'\nE         Right contains one more item: 'world,!'\nE         Use -v to get more diff\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert ['Hello world'] ==...\n1 failed in 0.04s"
+}

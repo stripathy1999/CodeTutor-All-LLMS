@@ -1,0 +1,22 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function largest_prime_factor at 0x78c36c6391c0>
+
+    def check(candidate):
+        assert candidate(15) == 5
+>       assert candidate(27) == 3
+E       assert None == 3
+E        +  where None = <function largest_prime_factor at 0x78c36c6391c0>(27)
+
+test_solution.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert None == 3
+1 failed in 0.04s

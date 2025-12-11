@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:08:27",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "\"\"\"\n        prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n        >>> prime_fib(1)\n        2\n        >>> prime_fib(2)\n        3\n        >>> prime_fib(3)\n        5\n        >>> prime_fib(4)\n        13\n        >>> prime_fib(5)\n        89\n        \"\"\"\n        # Initialize the first two Fibonacci numbers\n        fib1, fib2 = 0, 1\n    \n        # Generate Fibonacci numbers until we find the n-th prime\n        while True:\n            fib_next = fib1 + fib2\n>           if is_prime(fib_next):\n               ^^^^^^^^\nE           NameError: name 'is_prime' is not defined\n\nsolution.py:21: NameError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - NameError: name 'is_prime' is not defined\n1 failed in 0.04s"
+}

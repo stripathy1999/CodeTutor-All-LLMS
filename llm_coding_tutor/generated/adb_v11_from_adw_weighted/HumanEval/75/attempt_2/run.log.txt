@@ -1,0 +1,23 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function is_multiply_prime at 0x7ebf760111c0>
+
+    def check(candidate):
+    
+        assert candidate(5) == False
+>       assert candidate(30) == True
+E       assert False == True
+E        +  where False = <function is_multiply_prime at 0x7ebf760111c0>(30)
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert False == True
+1 failed in 0.04s

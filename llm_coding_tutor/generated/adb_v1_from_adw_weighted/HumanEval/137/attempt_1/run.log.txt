@@ -1,0 +1,47 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:13: in check
+    assert candidate(1, "2,3") == "2,3"
+           ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = 1, b = '2,3'
+
+    def compare_one(a, b):
+        """
+        Create a function that takes integers, floats, or strings representing
+        real numbers, and returns the larger variable in its given variable type.
+        Return None if the values are equal.
+        Note: If a real number is represented as a string, the floating point might be. or,
+    
+        compare_one(1, 2.5) ➞ 2.5
+        compare_one(1, "2,3") ➞ "2,3"
+        compare_one("5,1", "6") ➞ "6"
+        compare_one("1", 1) ➞ None
+        """
+        if isinstance(a, str) and isinstance(b, str):
+            # Convert strings to floats for comparison
+            float_a = float(a)
+            float_b = float(b)
+            if float_a > float_b:
+                return a
+            elif float_a < float_b:
+                return b
+            else:
+                return None
+        elif isinstance(a, (int, float)):
+>           if a > b:
+               ^^^^^
+E           TypeError: '>' not supported between instances of 'int' and 'str'
+
+solution.py:24: TypeError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - TypeError: '>' not supported between inst...
+1 failed in 0.04s

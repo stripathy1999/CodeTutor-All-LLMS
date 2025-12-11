@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function largest_divisor at 0x788c69bad3a0>
+
+    def check(candidate):
+>       assert candidate(3) == 1
+E       assert 3 == 1
+E        +  where 3 = <function largest_divisor at 0x788c69bad3a0>(3)
+
+test_solution.py:15: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert 3 == 1
+1 failed in 0.04s

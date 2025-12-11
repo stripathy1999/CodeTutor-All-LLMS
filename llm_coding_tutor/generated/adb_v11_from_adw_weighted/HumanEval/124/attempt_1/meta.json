@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:55:05",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "============================ FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:43: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function valid_date at 0x7e9474325300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate('03-11-2000') == True\nE       AssertionError: assert None == True\nE        +  where None = <function valid_date at 0x7e9474325300>('03-11-2000')\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: assert None == True\n1 failed in 0.04s"
+}

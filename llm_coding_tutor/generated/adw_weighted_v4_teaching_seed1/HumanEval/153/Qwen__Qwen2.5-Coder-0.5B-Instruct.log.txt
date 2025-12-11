@@ -1,0 +1,15 @@
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_solution.py _______________________
+ImportError while importing test module '/tmp/heval_Strongest_Extension_wubh9jjs/test_solution.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_solution.py:5: in <module>
+    from solution import Strongest_Extension as candidate
+E   ImportError: cannot import name 'Strongest_Extension' from 'solution' (/tmp/heval_Strongest_Extension_wubh9jjs/solution.py)
+=========================== short test summary info ============================
+ERROR test_solution.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.11s

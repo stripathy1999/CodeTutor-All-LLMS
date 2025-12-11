@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:19:27",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": " at 0x7ab06a699300>\n\n    def check(candidate):\n    \n        # Check some simple cases\n        assert candidate({\"p\":\"pineapple\", \"b\":\"banana\"}) == True, \"First test error: \" + str(candidate({\"p\":\"pineapple\", \"b\":\"banana\"}))\n>       assert candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}) == False, \"Second test error: \" + str(candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}))\nE       AssertionError: Second test error: True\nE       assert True == False\nE        +  where True = <function check_dict_case at 0x7ab06a699300>({'A': 'banana', 'B': 'banana', 'p': 'pineapple'})\n\ntest_solution.py:10: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: Second test error: True\n1 failed in 0.04s"
+}

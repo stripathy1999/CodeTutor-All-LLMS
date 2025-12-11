@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function circular_shift at 0x77fda714d300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate(100, 2) == "001"
+E       AssertionError: assert '010' == '001'
+E         
+E         - 001
+E         + 010
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert '010' == '001'
+1 failed in 0.04s

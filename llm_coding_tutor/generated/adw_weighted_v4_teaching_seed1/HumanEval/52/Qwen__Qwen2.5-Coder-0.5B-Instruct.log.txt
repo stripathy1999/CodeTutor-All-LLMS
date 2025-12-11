@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function below_threshold at 0x7a9a90141300>
+
+    def check(candidate):
+>       assert candidate([1, 2, 4, 10], 100)
+E       assert False
+E        +  where False = <function below_threshold at 0x7a9a90141300>([1, 2, 4, 10], 100)
+
+test_solution.py:12: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - assert False
+1 failed in 0.04s

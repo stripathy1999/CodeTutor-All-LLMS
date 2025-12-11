@@ -1,0 +1,27 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function encode at 0x7b5df7c6d300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate('TEST') == 'tgst', "This prints if this assert fails 1 (good for debugging!)"
+>       assert candidate('Mudasir') == 'mWDCSKR', "This prints if this assert fails 2 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 2 (good for debugging!)
+E       assert 'mwDcSkR' == 'mWDCSKR'
+E         
+E         - mWDCSKR
+E         + mwDcSkR
+
+test_solution.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

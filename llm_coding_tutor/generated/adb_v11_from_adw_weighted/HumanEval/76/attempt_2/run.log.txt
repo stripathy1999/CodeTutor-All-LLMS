@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function is_simple_power at 0x78d64447d300>
+
+    def check(candidate):
+    
+        # Check some simple cases
+        assert candidate(16, 2)== True, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate(143214, 16)== False, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate(4, 2)==True, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate(9, 3)==True, "This prints if this assert fails 1 (good for debugging!)"
+        assert candidate(16, 4)==True, "This prints if this assert fails 1 (good for debugging!)"
+>       assert candidate(24, 2)==False, "This prints if this assert fails 1 (good for debugging!)"
+E       AssertionError: This prints if this assert fails 1 (good for debugging!)
+E       assert True == False
+E        +  where True = <function is_simple_power at 0x78d64447d300>(24, 2)
+
+test_solution.py:14: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: This prints if this asser...
+1 failed in 0.04s

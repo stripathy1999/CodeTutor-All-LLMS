@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function file_name_check at 0x7831e59f91c0>
+
+    def check(candidate):
+    
+        # Check some simple cases
+>       assert candidate("example.txt") == 'Yes'
+E       AssertionError: assert 'No' == 'Yes'
+E         
+E         - Yes
+E         + No
+
+test_solution.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 'No' == 'Yes'
+1 failed in 0.05s

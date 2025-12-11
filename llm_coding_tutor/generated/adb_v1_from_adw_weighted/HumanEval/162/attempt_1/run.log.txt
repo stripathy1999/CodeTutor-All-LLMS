@@ -1,0 +1,33 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_solution.py:9: in check
+    assert candidate('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Hello world'
+
+    def string_to_md5(text):
+        """
+        Given a string 'text', return its md5 hash equivalent string.
+        If 'text' is an empty string, return None.
+    
+        >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'
+        """
+        if not text:
+            return None
+>       return hashlib.md5(text.encode()).hexdigest()
+               ^^^^^^^
+E       NameError: name 'hashlib' is not defined. Did you forget to import 'hashlib'
+
+solution.py:10: NameError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - NameError: name 'hashlib' is not defined....
+1 failed in 0.04s

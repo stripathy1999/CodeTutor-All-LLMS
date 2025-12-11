@@ -1,0 +1,165 @@
+task_id,variant,model,pass,fail_reason,gen_latency_ms,pytest_ms,seed,timestamp
+HumanEval/0,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,4461,1302,1,2025-12-01 08:16:03
+HumanEval/1,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7609,1302,1,2025-12-01 08:16:15
+HumanEval/10,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,7352,1302,1,2025-12-01 08:16:26
+HumanEval/100,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2786,1202,1,2025-12-01 08:16:33
+HumanEval/101,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5878,1202,1,2025-12-01 08:16:42
+HumanEval/102,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,5007,1202,1,2025-12-01 08:16:51
+HumanEval/103,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,3747,1102,1,2025-12-01 08:16:59
+HumanEval/104,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5726,1202,1,2025-12-01 08:17:08
+HumanEval/105,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7214,1202,1,2025-12-01 08:17:20
+HumanEval/106,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7089,1201,1,2025-12-01 08:17:31
+HumanEval/107,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,7125,1202,1,2025-12-01 08:17:42
+HumanEval/108,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2678,1202,1,2025-12-01 08:17:48
+HumanEval/109,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5754,1202,1,2025-12-01 08:17:58
+HumanEval/11,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6734,1202,1,2025-12-01 08:18:08
+HumanEval/110,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3557,1202,1,2025-12-01 08:18:16
+HumanEval/111,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.11s,4455,1202,1,2025-12-01 08:18:24
+HumanEval/112,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7226,1102,1,2025-12-01 08:18:35
+HumanEval/113,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7347,1202,1,2025-12-01 08:18:47
+HumanEval/114,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7042,1101,1,2025-12-01 08:18:57
+HumanEval/115,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7195,1202,1,2025-12-01 08:19:08
+HumanEval/116,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7259,1202,1,2025-12-01 08:19:19
+HumanEval/117,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7295,1202,1,2025-12-01 08:19:30
+HumanEval/118,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5142,1202,1,2025-12-01 08:19:39
+HumanEval/119,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7199,1102,1,2025-12-01 08:19:51
+HumanEval/12,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,4336,1201,1,2025-12-01 08:19:59
+HumanEval/120,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,1890,1101,1,2025-12-01 08:20:05
+HumanEval/121,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7206,1202,1,2025-12-01 08:20:15
+HumanEval/122,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,778,1202,1,2025-12-01 08:20:20
+HumanEval/123,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7117,1202,1,2025-12-01 08:20:31
+HumanEval/124,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7100,1202,1,2025-12-01 08:20:42
+HumanEval/125,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,6960,1102,1,2025-12-01 08:20:52
+HumanEval/126,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6189,1202,1,2025-12-01 08:21:03
+HumanEval/127,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7181,1202,1,2025-12-01 08:21:13
+HumanEval/128,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3785,1202,1,2025-12-01 08:21:21
+HumanEval/129,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.11s,5606,1202,1,2025-12-01 08:21:30
+HumanEval/13,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2539,1202,1,2025-12-01 08:21:37
+HumanEval/130,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7179,1202,1,2025-12-01 08:21:48
+HumanEval/131,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7162,1202,1,2025-12-01 08:21:59
+HumanEval/132,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7092,1101,1,2025-12-01 08:22:10
+HumanEval/133,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7169,1102,1,2025-12-01 08:22:20
+HumanEval/134,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7205,1202,1,2025-12-01 08:22:31
+HumanEval/135,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6765,1202,1,2025-12-01 08:22:42
+HumanEval/136,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7198,1202,1,2025-12-01 08:22:53
+HumanEval/137,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7198,1202,1,2025-12-01 08:23:04
+HumanEval/138,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6908,1202,1,2025-12-01 08:23:14
+HumanEval/139,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,3266,1202,1,2025-12-01 08:23:21
+HumanEval/14,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7138,1202,1,2025-12-01 08:23:32
+HumanEval/140,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5721,1202,1,2025-12-01 08:23:42
+HumanEval/141,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,7252,1202,1,2025-12-01 08:23:53
+HumanEval/142,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7214,1102,1,2025-12-01 08:24:04
+HumanEval/143,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5089,1202,1,2025-12-01 08:24:13
+HumanEval/144,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3115,1202,1,2025-12-01 08:24:20
+HumanEval/145,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7213,1202,1,2025-12-01 08:24:31
+HumanEval/146,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,4365,1202,1,2025-12-01 08:24:39
+HumanEval/147,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.11s,7121,1202,1,2025-12-01 08:24:50
+HumanEval/148,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,6900,1101,1,2025-12-01 08:25:01
+HumanEval/149,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3690,1202,1,2025-12-01 08:25:08
+HumanEval/15,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,1919,1202,1,2025-12-01 08:25:14
+HumanEval/150,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4305,1202,1,2025-12-01 08:25:22
+HumanEval/151,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7121,1202,1,2025-12-01 08:25:34
+HumanEval/152,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,728,1202,1,2025-12-01 08:25:38
+HumanEval/153,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3214,1201,1,2025-12-01 08:25:45
+HumanEval/154,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7214,1202,1,2025-12-01 08:25:56
+HumanEval/155,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7155,1202,1,2025-12-01 08:26:07
+HumanEval/156,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.11s,7355,1202,1,2025-12-01 08:26:19
+HumanEval/157,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2107,1302,1,2025-12-01 08:26:25
+HumanEval/158,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3694,1202,1,2025-12-01 08:26:32
+HumanEval/159,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4724,1202,1,2025-12-01 08:26:41
+HumanEval/16,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2066,1201,1,2025-12-01 08:26:47
+HumanEval/160,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4911,1201,1,2025-12-01 08:26:56
+HumanEval/161,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2720,1201,1,2025-12-01 08:27:03
+HumanEval/162,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6399,1202,1,2025-12-01 08:27:13
+HumanEval/163,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6039,1202,1,2025-12-01 08:27:23
+HumanEval/17,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7104,1202,1,2025-12-01 08:27:34
+HumanEval/18,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6543,1202,1,2025-12-01 08:27:45
+HumanEval/19,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6630,1202,1,2025-12-01 08:27:55
+HumanEval/2,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3942,1202,1,2025-12-01 08:28:03
+HumanEval/20,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7031,1101,1,2025-12-01 08:28:13
+HumanEval/21,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,5049,1202,1,2025-12-01 08:28:23
+HumanEval/22,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,1067,1202,1,2025-12-01 08:28:28
+HumanEval/23,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,1237,1202,1,2025-12-01 08:28:32
+HumanEval/24,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,4327,1202,1,2025-12-01 08:28:41
+HumanEval/25,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7062,1101,1,2025-12-01 08:28:52
+HumanEval/26,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,2729,1201,1,2025-12-01 08:28:58
+HumanEval/27,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,4328,1102,1,2025-12-01 08:29:06
+HumanEval/28,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,3180,1202,1,2025-12-01 08:29:13
+HumanEval/29,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2202,1202,1,2025-12-01 08:29:19
+HumanEval/3,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,5318,1302,1,2025-12-01 08:29:28
+HumanEval/30,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,3502,1102,1,2025-12-01 08:29:35
+HumanEval/31,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7157,1202,1,2025-12-01 08:29:46
+HumanEval/32,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7309,1102,1,2025-12-01 08:29:58
+HumanEval/33,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7221,1202,1,2025-12-01 08:30:09
+HumanEval/34,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4351,1202,1,2025-12-01 08:30:17
+HumanEval/35,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6970,1202,1,2025-12-01 08:30:28
+HumanEval/36,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3277,1202,1,2025-12-01 08:30:35
+HumanEval/37,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7252,1202,1,2025-12-01 08:30:46
+HumanEval/38,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7242,1202,1,2025-12-01 08:30:59
+HumanEval/39,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4620,1202,1,2025-12-01 08:31:07
+HumanEval/4,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3531,1202,1,2025-12-01 08:31:14
+HumanEval/40,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7363,1302,1,2025-12-01 08:31:26
+HumanEval/41,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6823,1202,1,2025-12-01 08:31:37
+HumanEval/42,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,6143,1102,1,2025-12-01 08:31:47
+HumanEval/43,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4049,1302,1,2025-12-01 08:31:55
+HumanEval/44,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7024,1202,1,2025-12-01 08:32:06
+HumanEval/45,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,3357,1202,1,2025-12-01 08:32:13
+HumanEval/46,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7230,1102,1,2025-12-01 08:32:24
+HumanEval/47,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7162,1202,1,2025-12-01 08:32:35
+HumanEval/48,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4444,1202,1,2025-12-01 08:32:44
+HumanEval/49,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3164,1202,1,2025-12-01 08:32:51
+HumanEval/5,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7114,1102,1,2025-12-01 08:33:02
+HumanEval/50,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,5754,1202,1,2025-12-01 08:33:12
+HumanEval/51,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6476,1202,1,2025-12-01 08:33:23
+HumanEval/52,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,4753,1202,1,2025-12-01 08:33:31
+HumanEval/53,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,669,1102,1,2025-12-01 08:33:36
+HumanEval/54,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,808,1202,1,2025-12-01 08:33:41
+HumanEval/55,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,5422,1202,1,2025-12-01 08:33:50
+HumanEval/56,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3762,1202,1,2025-12-01 08:33:58
+HumanEval/57,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4723,1202,1,2025-12-01 08:34:06
+HumanEval/58,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5014,1202,1,2025-12-01 08:34:15
+HumanEval/59,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,6946,1202,1,2025-12-01 08:34:26
+HumanEval/6,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.15s,7183,1202,1,2025-12-01 08:34:38
+HumanEval/60,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,4377,1202,1,2025-12-01 08:34:46
+HumanEval/61,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3408,1202,1,2025-12-01 08:34:53
+HumanEval/62,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5810,1202,1,2025-12-01 08:35:03
+HumanEval/63,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,4842,1302,1,2025-12-01 08:35:12
+HumanEval/64,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7132,1202,1,2025-12-01 08:35:23
+HumanEval/65,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5616,1202,1,2025-12-01 08:35:33
+HumanEval/66,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,3621,1202,1,2025-12-01 08:35:40
+HumanEval/67,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7187,1102,1,2025-12-01 08:35:51
+HumanEval/68,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7156,1202,1,2025-12-01 08:36:02
+HumanEval/69,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.18s,5475,1302,1,2025-12-01 08:36:12
+HumanEval/7,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4687,1202,1,2025-12-01 08:36:21
+HumanEval/70,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7192,1202,1,2025-12-01 08:36:33
+HumanEval/71,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7121,1202,1,2025-12-01 08:36:43
+HumanEval/72,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7106,1102,1,2025-12-01 08:36:54
+HumanEval/73,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5359,1202,1,2025-12-01 08:37:03
+HumanEval/74,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5546,1202,1,2025-12-01 08:37:13
+HumanEval/75,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.37s,5308,1502,1,2025-12-01 08:37:23
+HumanEval/76,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2862,1202,1,2025-12-01 08:37:30
+HumanEval/77,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,5117,1202,1,2025-12-01 08:37:40
+HumanEval/78,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7345,1202,1,2025-12-01 08:37:51
+HumanEval/79,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5390,1202,1,2025-12-01 08:38:00
+HumanEval/8,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,3267,1202,1,2025-12-01 08:38:07
+HumanEval/80,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7183,1202,1,2025-12-01 08:38:19
+HumanEval/81,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7227,1101,1,2025-12-01 08:38:30
+HumanEval/82,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,4526,1302,1,2025-12-01 08:38:38
+HumanEval/83,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7173,1302,1,2025-12-01 08:38:50
+HumanEval/84,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,6406,1202,1,2025-12-01 08:39:00
+HumanEval/85,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4993,1202,1,2025-12-01 08:39:09
+HumanEval/86,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5161,1202,1,2025-12-01 08:39:18
+HumanEval/87,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7117,1202,1,2025-12-01 08:39:29
+HumanEval/88,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7139,1102,1,2025-12-01 08:39:39
+HumanEval/89,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,5049,1102,1,2025-12-01 08:39:48
+HumanEval/9,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.17s,6712,1202,1,2025-12-01 08:39:59
+HumanEval/90,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7125,1202,1,2025-12-01 08:40:10
+HumanEval/91,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5475,1202,1,2025-12-01 08:40:20
+HumanEval/92,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2816,1202,1,2025-12-01 08:40:26
+HumanEval/93,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,4097,1202,1,2025-12-01 08:40:34
+HumanEval/94,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,7240,1202,1,2025-12-01 08:40:45
+HumanEval/95,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7260,1102,1,2025-12-01 08:40:56
+HumanEval/96,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,1,,7208,1102,1,2025-12-01 08:41:07
+HumanEval/97,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,5751,1202,1,2025-12-01 08:41:17
+HumanEval/98,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 error in 0.16s,2826,1202,1,2025-12-01 08:41:23
+HumanEval/99,baseline_primitive,Qwen/Qwen2.5-Coder-0.5B-Instruct,0,1 failed in 0.04s,7086,1102,1,2025-12-01 08:41:34

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:57:54",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "    assert candidate([1,2,3])==14, \"This prints if this assert fails 1 (good for debugging!)\"\n        assert candidate([1.0,2,3])==14, \"This prints if this assert fails 1 (good for debugging!)\"\n        assert candidate([1,3,5,7])==84, \"This prints if this assert fails 1 (good for debugging!)\"\n>       assert candidate([1.4,4.2,0])==29, \"This prints if this assert fails 1 (good for debugging!)\"\nE       AssertionError: This prints if this assert fails 1 (good for debugging!)\nE       assert 19.6 == 29\nE        +  where 19.6 = <function sum_squares at 0x7c354d305300>([1.4, 4.2, 0])\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: This prints if this asser...\n1 failed in 0.04s"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 09:51:54",
+  "attempt": 1,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function histogram at 0x7c92cb5991c0>\n\n    def check(candidate):\n    \n        # Check some simple cases\n>       assert candidate('a b b a') == {'a':2,'b': 2}, \"This prints if this assert fails 1 (good for debugging!)\"\nE       AssertionError: This prints if this assert fails 1 (good for debugging!)\nE       assert {' ': 3} == {'a': 2, 'b': 2}\nE         \nE         Left contains 1 more item:\nE         {' ': 3}\nE         Right contains 2 more items:\nE         {'a': 2, 'b': 2}\nE         Use -v to get more diff\n\ntest_solution.py:9: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - AssertionError: This prints if this asser...\n1 failed in 0.04s"
+}

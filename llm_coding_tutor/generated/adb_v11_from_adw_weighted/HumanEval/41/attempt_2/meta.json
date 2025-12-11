@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-11-23 21:00:41",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________________________ test_all ___________________________________\n\n    def test_all():\n>       check(candidate)\n\ntest_solution.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncandidate = <function car_race_collision at 0x7d3dd3fdc900>\n\n    def check(candidate):\n>       assert candidate(2) == 4\nE       assert 1 == 4\nE        +  where 1 = <function car_race_collision at 0x7d3dd3fdc900>(2)\n\ntest_solution.py:12: AssertionError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - assert 1 == 4\n1 failed in 0.04s"
+}

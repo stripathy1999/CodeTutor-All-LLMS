@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-01 10:01:19",
+  "attempt": 2,
+  "source_variant": "adw_weighted_v2_teaching",
+  "seed": 1,
+  "repair_ms": 1102,
+  "traceback_tail": "        \"\"\"\n        Write a function which sorts the given list of integers\n        in ascending order according to the sum of their digits.\n        Note: if there are several items with similar sum of their digits,\n        order them based on their index in original list.\n    \n        For example:\n        >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n        >>> order_by_points([]) == []\n        \"\"\"\n>       return sorted(nums, key=sum(int(digit) for digit in str(x)))\n                                                                ^\nE       NameError: name 'x' is not defined\n\nsolution.py:12: NameError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_all - NameError: name 'x' is not defined\n1 failed in 0.04s"
+}

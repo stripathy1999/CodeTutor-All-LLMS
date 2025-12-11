@@ -1,0 +1,25 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_all ___________________________________
+
+    def test_all():
+>       check(candidate)
+
+test_solution.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+candidate = <function count_distinct_characters at 0x7a6c017e93a0>
+
+    def check(candidate):
+        assert candidate('') == 0
+        assert candidate('abcde') == 5
+        assert candidate('abcde' + 'cade' + 'CADE') == 5
+        assert candidate('aaaaAAAAaaaa') == 1
+>       assert candidate('Jerry jERRY JeRRRY') == 5
+E       AssertionError: assert 4 == 5
+E        +  where 4 = <function count_distinct_characters at 0x7a6c017e93a0>('Jerry jERRY JeRRRY')
+
+test_solution.py:19: AssertionError
+=========================== short test summary info ============================
+FAILED test_solution.py::test_all - AssertionError: assert 4 == 5
+1 failed in 0.04s
