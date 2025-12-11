@@ -12,7 +12,7 @@ This repository is artifact-complete for the CS297 project “Modular Enhancemen
 - Evaluation summaries, ablations, and plots (`llm_coding_tutor/results/`).
 - Classifier assets for error/risk prediction (ECNN, GEPN).
 
-## 📁 Repository structure (accurate)
+## 📁 Repository structure
 ```
 CodeTutor-All-LLMS/
 ├── combined_humanEval_leetcode_dataset.jsonl   # tasks + canonical tests
@@ -39,11 +39,6 @@ CodeTutor-All-LLMS/
 │   │   ├── summary_baseline.json
 │   │   ├── adw_adb_pipeline_summary.json
 │   │   └── summary_pipeline_v11.csv
-│   ├── ecnn_v2/               # ECNN dataset snapshots and weights
-│   ├── gepn/                  # GEPN feature matrices + model files
-│   ├── adw/                   # ADW prompt builders
-│   ├── adb/                   # ADB debugging modules
-│   └── notebooks/             # (if present) Colab notebooks used to run experiments
 └── README.md
 ```
 
@@ -59,7 +54,7 @@ CodeTutor-All-LLMS/
 - **GEPN-gated controller (46.95%)** — Chooses cheap/normal/heavy generation and when to call ADB/ECNN. Artifacts: `generated/gepn_gated_adw_adb_ecnn/`, `results/gepn_gated_summary.json`.
 - **Union-mode ensemble (56.71%)** — Counts success if any candidate across baseline/ADW/ADB/ECNN passes. See `results/pipeline_ablation_summary.csv`.
 
-## 📊 Results (from repo artifacts)
+## 📊 Results
 | Variant / source file | Tasks | Passed | Pass rate | Notes |
 | --- | --- | --- | --- | --- |
 | Baseline (`summary_baseline.json`) | 328 (seeds 1–2) | 132 | 40.24% | Raw model runs |
